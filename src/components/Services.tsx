@@ -2,87 +2,83 @@ const services = [
   {
     title: "UI/UX Design",
     description:
-      "Interfaces projetadas com foco em usabilidade, acessibilidade e conversão. Do wireframe ao protótipo navegável, garantimos experiências que os usuários entendem na primeira interação.",
+      "Interfaces built for usability, accessibility, and conversion. From wireframe to navigable prototype, we deliver experiences users understand on the first interaction.",
   },
   {
     title: "Project Collaboration",
     description:
-      "Gestão ágil de projetos com sprints definidos, backlog priorizado e comunicação transparente. Integramos ao time do cliente ou assumimos a coordenação completa do projeto.",
+      "Agile project management with defined sprints, prioritized backlog, and transparent communication. We embed into your team or take full ownership of project coordination.",
   },
   {
     title: "Marketing Strategy",
     description:
-      "Estratégias orientadas a dados que conectam produto e audiência. Cobertura de funil completo: posicionamento, growth, e análise de performance de campanhas.",
+      "Data-driven strategies that connect product and audience. Full-funnel coverage: positioning, growth, and campaign performance analysis.",
   },
   {
     title: "API Integration",
     description:
-      "Conectamos sistemas legados, plataformas SaaS e serviços externos via REST e GraphQL. Arquitetamos integrações robustas com autenticação, rate limiting e tratamento de falhas.",
+      "We connect legacy systems, SaaS platforms, and external services via REST and GraphQL. Robust integrations architected with authentication, rate limiting, and fault tolerance.",
   },
   {
     title: "Custom Software Development",
     description:
-      "Desenvolvimento sob medida para problemas que ferramentas prontas não resolvem. Desde MVPs até sistemas enterprise, entregamos código escalável, testável e documentado.",
+      "Tailor-made solutions for problems off-the-shelf tools can't solve. From MVPs to enterprise systems, we deliver scalable, testable, and documented code.",
   },
   {
     title: "SEO & Analytics",
     description:
-      "Otimização técnica de SEO combinada com instrumentação analítica. Implementamos rastreamento de eventos, dashboards e relatórios que transformam tráfego em decisões.",
+      "Technical SEO optimization combined with analytical instrumentation. We implement event tracking, dashboards, and reports that turn traffic into decisions.",
   },
 ];
 
 export default function Services() {
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto">
-      {/* Cabeçalho */}
-      <div className="text-center mb-16">
-        <span className="text-blue-600 font-semibold uppercase tracking-wider text-sm">
-          O que fazemos
-        </span>
-        <h2 className="text-4xl font-bold mt-2 tracking-tight text-slate-900">
-          Nossas Competências
-        </h2>
-        <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
-          Soluções integradas de engenharia e estratégia para fundadores e corporações que precisam de resultados reais, não de promessas.
-        </p>
-      </div>
+    <section id="services" className="py-24 px-6 bg-white">
+      <div className="max-w-5xl mx-auto">
 
-      {/* Grid de Serviços */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {services.map((service, index) => (
-          <div
-            key={service.title}
-            className="p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-100 transition-all duration-200 flex flex-col gap-4"
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded-md">
+        {/* Header */}
+        <div className="mb-16">
+          <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
+            What We Do
+          </p>
+          <h2 className="text-5xl font-bold text-black leading-tight tracking-tight">
+            Our Core <br /> Competencies
+          </h2>
+        </div>
+
+        {/* Service List */}
+        <div className="divide-y divide-neutral-200">
+          {services.map((service, index) => (
+            <div
+              key={service.title}
+              className="grid grid-cols-[3rem_1fr_2fr] items-start gap-8 py-8"
+            >
+              <span className="text-sm font-mono text-neutral-400 pt-1">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-lg font-bold text-slate-900 tracking-tight">
+              <h3 className="text-lg font-bold text-black">
                 {service.title}
               </h3>
+              <p className="text-neutral-500 leading-relaxed">
+                {service.description}
+              </p>
             </div>
-            <p className="text-slate-600 leading-relaxed text-sm">
-              {service.description}
-            </p>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {/* CTA */}
-      <div className="mt-16 text-center bg-slate-900 rounded-2xl p-10">
-        <h3 className="text-2xl font-bold text-white tracking-tight">
-          Pronto para escalar seu produto?
-        </h3>
-        <p className="mt-3 text-slate-400 max-w-xl mx-auto">
-          Fale com nosso time técnico e descubra como podemos transformar seu desafio em solução entregável.
-        </p>
-        <a
-          href="#contact"
-          className="inline-block mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors duration-200"
-        >
-          Falar com a Galindo
-        </a>
+        {/* CTA */}
+        <div className="mt-20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-neutral-200 pt-12">
+          <p className="text-2xl font-bold text-black leading-snug">
+            Ready to build <br /> something real?
+          </p>
+          <a
+            href="#contact"
+            className="inline-block px-8 py-4 bg-black hover:bg-neutral-800 text-white font-semibold rounded-full transition-colors duration-200 whitespace-nowrap"
+          >
+            Talk to Galindo →
+          </a>
+        </div>
+
       </div>
     </section>
   );
