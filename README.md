@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# Galindo Consulting Group Inc. — Redesign Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional corporate website remake for **Galindo Consulting Group Inc.**, designed to modernize the digital interface while showcasing scalable front-end engineering, semantic layout architecture, and performance-driven UI.
 
-Currently, two official plugins are available:
+## 🚀 Project Scope
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The ecosystem is built around four core institutional sections, fully mapping the company's operational transparency and enterprise solutions:
 
-## React Compiler
+* **About Us:** The organizational core, highlighting the company's mission, work ethics, and agile development philosophy. Includes real execution metrics (completed projects, audited hours) alongside executive leadership profiles.
+* **Services:** A comprehensive overview of core business competencies including UI/UX Design, Project Collaboration, Marketing Strategy, API Integration, Custom Software Development, and SEO/Analytics optimization.
+* **Projects (Case Studies):** An interactive portfolio architecture showcasing actual project structures, problem-solving methodologies, tech stack details, and real results delivered to clients.
+* **Contact Us:** Dedicated commercial gateway featuring direct corporate communication channels, operational base location in Manassas, VA, phone extensions, and a newsletter subscription component.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Architecture & Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The application leverages high-performance tools built for the modern web ecosystem:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **React:** Component-based UI library for building fluid, state-driven user interfaces.
+* **TypeScript:** Type safety layer ensuring robust code refactoring and predictive development patterns.
+* **Tailwind CSS (v4.0):** Powered by the native `@tailwindcss/vite` compiler plugin, delivering lightning-fast CSS processing directly into the build pipeline without overhead configuration files.
+* **Vite:** Next-generation frontend tooling providing near-instant Hot Module Replacement (HMR).
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ⚙️ How to Run the Project
+
+Follow these steps to set up the development environment locally:
+
+### 1. Install Dependencies
+Install all the necessary packages mapped in the `package.json` file:
+```bash
+npm i
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
