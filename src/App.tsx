@@ -10,10 +10,10 @@ function App() {
       {/* 1. SEÇÃO: ABOUT US (Sua Task) */}
       <AboutUs />
 
-      {/* 2. SEÇÃO: SERVICES (Task do Rodrigo) */}
+      {/* 2. SEÇÃO: SERVICES (Task do Ruan Victor) */}
       {/* <Services /> */}
 
-      {/* 3. SEÇÃO: PROJECTS / CASE STUDIES (Task do Ruan Victor) */}
+      {/* 3. SEÇÃO: PROJECTS / CASE STUDIES (Task do Rodrigo) */}
       <Projects />
 
       {/* 4. SEÇÃO: CONTACT US (Task do Hiran) */}
