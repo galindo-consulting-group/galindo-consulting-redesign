@@ -1,7 +1,7 @@
 import AboutUs from "./components/AboutUs";
 // Os imports abaixo ficam comentados até que os meninos criem os arquivos
 // import Services from "./components/Services";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 // import ContactUs from "./components/ContactUs";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       {/* <Services /> */}
 
       {/* 3. SEÇÃO: PROJECTS / CASE STUDIES (Task do Rodrigo) */}
-      <Projects />
+      {/* <Projects /> */}
 
       {/* 4. SEÇÃO: CONTACT US (Task do Hiran) */}
       {/* <ContactUs /> */}
