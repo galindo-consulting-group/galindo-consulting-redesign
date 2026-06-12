@@ -2,8 +2,7 @@ import AboutUs from "./components/AboutUs";
 import Introduction from "./components/Introduction";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
-// Os imports abaixo ficam comentados até que os meninos criem os arquivos
-// import ContactUs from "./components/ContactUs";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
       <Services />
 
       {/* 4. SEÇÃO: CONTACT US (Task do Hiran) */}
-      {/* <ContactUs /> */}
+      <ContactUs />
     </main>
   );
 }
