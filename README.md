@@ -12,7 +12,7 @@ Single Page Application (SPA) with continuous scroll. Each section is anchor-lin
 |---|---|---|
 | About Us | — | In progress |
 | Services | Rodrigo | PR open — awaiting review |
-| Projects | Ruan Victor | In progress |
+| Projects | Ruan Victor | Completed |
 | Contact Us | Hiran | In progress |
 
 ---
