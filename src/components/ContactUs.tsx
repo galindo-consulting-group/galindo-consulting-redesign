@@ -1,6 +1,6 @@
 export default function ContactUs() {
   return (
-    <section id="contact" className="py-24 px-6 bg-slate-50 border-b border-slate-200">
+    <section id="contact" className="py-24 px-6 bg-white border-b border-slate-200">
       <div className="max-w-5xl mx-auto">
         <div className="mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
@@ -32,15 +32,16 @@ export default function ContactUs() {
                     Email
                   </p>
                   <p className="text-base font-semibold text-slate-900">
-                    contato@galindo.com
+                    president@galindoinc.com
                   </p>
                 </div>
+
                 <div className="rounded-3xl bg-slate-50 p-5 border border-slate-200">
                   <p className="text-sm uppercase tracking-[0.24em] text-slate-400 mb-3">
                     Telefone
                   </p>
                   <p className="text-base font-semibold text-slate-900">
-                    +55 21 99999-9999
+                    +1 703-881-7822
                   </p>
                 </div>
               </div>
@@ -107,7 +108,7 @@ export default function ContactUs() {
 
             <button
               type="submit"
-              className="inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-8 py-4 text-base font-semibold text-white transition-colors duration-200 hover:bg-slate-800"
+              className="inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-8 py-4 text-base font-semibold text-white transition-colors duration-200 hover:bg-gray-800"
             >
               Solicitar proposta
             </button>
