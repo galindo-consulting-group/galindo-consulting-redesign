@@ -3,12 +3,12 @@ import Introduction from "./components/Introduction";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
-import Nav from "./components/Nav";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <main className="min-h-screen bg-slate-50 flex flex-col">
-      <Nav />
+      <NavBar />
       {/* 1. SEÇÃO: INTRODUCTION (Visão Geral e Métricas da Empresa) */}
       <Introduction />
 

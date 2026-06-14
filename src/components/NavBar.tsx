@@ -9,7 +9,7 @@ const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
-export default function Nav() {
+export default function NavBar() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
