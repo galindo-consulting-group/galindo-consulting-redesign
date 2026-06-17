@@ -1,15 +1,15 @@
 export default function ContactUs() {
   return (
-    <section id="contact" className="py-24 px-6 bg-white border-b border-slate-200">
+    <section id="contact" className="py-20 px-5 bg-white border-b border-slate-200 sm:px-6 md:py-24">
       <div className="max-w-5xl mx-auto">
-        <div className="mb-16">
+        <div className="mb-12 md:mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
             Contact
           </p>
-          <h2 className="text-5xl font-bold text-black leading-tight tracking-tight">
+          <h2 className="text-4xl font-bold text-black leading-tight tracking-tight sm:text-5xl">
             Contrate-nos
           </h2>
-          <p className="mt-4 max-w-2xl text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 max-w-2xl text-base text-slate-600 leading-relaxed sm:text-lg">
             Estamos prontos para transformar sua visão em software confiável e escalável.
             Conte-nos seu desafio e vamos estruturar a melhor proposta técnica para o seu negócio.
           </p>
@@ -17,7 +17,7 @@ export default function ContactUs() {
 
         <div className="grid gap-12 lg:grid-cols-[1.3fr_0.9fr]">
           <div className="space-y-6">
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-10">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">
                 Como podemos ajudar?
               </h3>
@@ -31,7 +31,7 @@ export default function ContactUs() {
                   <p className="text-sm uppercase tracking-[0.24em] text-slate-400 mb-3">
                     Email
                   </p>
-                  <p className="text-base font-semibold text-slate-900">
+                  <p className="break-words text-base font-semibold text-slate-900">
                     president@galindoinc.com
                   </p>
                 </div>
@@ -47,7 +47,7 @@ export default function ContactUs() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-10">
               <h4 className="text-xl font-bold text-slate-900 mb-3">
                 Envie uma mensagem rápida
               </h4>
@@ -57,7 +57,7 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <form className="space-y-6 rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
+          <form className="space-y-6 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-10">
             <div>
               <label className="text-sm font-semibold text-slate-700" htmlFor="name">
                 Nome completo
