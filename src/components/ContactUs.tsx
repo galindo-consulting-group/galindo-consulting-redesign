@@ -1,13 +1,13 @@
 export default function ContactUs() {
   return (
     <section id="contact" className="py-24 px-6 bg-white border-b border-slate-200">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
             Contact
           </p>
-          <h2 className="text-5xl font-bold text-black leading-tight tracking-tight">
-            Hire us
+          <h2 className="text-6xl font-bold text-black leading-tight tracking-tight">
+            Hire us 
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-slate-600 leading-relaxed">
             We are ready to transform your vision into reliable and scalable software.
@@ -15,22 +15,22 @@ export default function ContactUs() {
           </p>
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-[1.3fr_0.9fr]">
-          <div className="space-y-6">
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
+        <div className="grid gap-20 lg:grid-cols-[1.3fr_0.9fr]">
+          <div className="space-y-7">
+            <div className="rounded-[2rem] border border-slate-100 bg-white p-10 shadow-sm">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">
                 How can we help?
               </h3>
               <p className="text-base leading-relaxed text-slate-600">
-               We offer bespoke development, systems integration, digital strategy, and
-               ongoing support for agile operations. Choose the best channel and let's start the conversation. 
+                We offer bespoke development, systems integration, digital strategy, and
+                ongoing support for agile operations. Choose the best channel and let's start the conversation.
               </p>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="mt-8 grid gap-8 sm:grid-cols-">
                 <div className="rounded-3xl bg-slate-50 p-5 border border-slate-200">
                   <p className="text-sm uppercase tracking-[0.24em] text-slate-400 mb-3">
                     Email
-                  </p>
+                  </p> 
                   <p className="text-base font-semibold text-slate-900">
                     president@galindoinc.com
                   </p>
@@ -47,7 +47,7 @@ export default function ContactUs() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
+            <div className="rounded-[2rem] border border-slate-100 bg-white p-10 shadow-sm">
               <h4 className="text-xl font-bold text-slate-900 mb-3">
                 Send a quick message.
               </h4>
@@ -57,7 +57,7 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <form className="space-y-6 rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
+          <form className="space-y-6 rounded-[2rem] border border-slate-100 bg-white p-10 shadow-sm">
             <div>
               <label className="text-sm font-semibold text-slate-700" htmlFor="name">
                 Full name
@@ -118,3 +118,4 @@ export default function ContactUs() {
     </section>
   );
 }
+
