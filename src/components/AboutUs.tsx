@@ -49,33 +49,33 @@ export default function AboutUs() {
   ];
 
   return (
-    <section id="about" className="py-24 px-8 md:px-16 bg-slate-900 text-slate-300 border-b border-slate-950">
+    <section id="about" className="py-20 px-5 sm:px-8 md:px-16 md:py-24 bg-slate-900 text-slate-300 border-b border-slate-950">
       <div className="max-w-[90rem] mx-auto">
         
         {/* TEXTO DE INTRODUÇÃO MAIS LARGO */}
-        <div className="w-full mb-20 text-left">
+        <div className="w-full mb-14 text-left md:mb-20">
           <div className="mb-6">
             <span className="text-[11px] font-mono font-bold uppercase tracking-[0.2em] text-indigo-400 bg-indigo-950/80 border border-indigo-500/30 px-3 py-1.5 rounded-md shadow-inner inline-block">
               Who We Are
             </span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white block w-full">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white block w-full">
             We build architecture that survives production chaos.
           </h2>
           
           {/* max-w-6xl expande a linha horizontal do parágrafo */}
-          <p className="text-xl text-slate-400 font-light leading-relaxed w-full max-w-6xl mt-6">
+          <p className="text-base sm:text-lg md:text-xl text-slate-400 font-light leading-relaxed w-full max-w-6xl mt-6">
             We design, build, and stabilize scalable software infrastructure for international startups and global SaaS environments. Moving beyond standard feature coding, we engineer solutions centered on data security, absolute uptime, and strategic product alignment.
           </p>
         </div>
 
         {/* GRID RESTAURADO: 3 EM CIMA, RESTANTE EM BAIXO */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-10">
           {team.map((member, index) => (
             <div 
               key={member.name}
-              className="group relative flex flex-col min-h-[500px] w-full bg-slate-950 rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+              className="group relative flex min-h-[420px] w-full flex-col overflow-hidden rounded-2xl bg-slate-950 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:min-h-[460px] lg:min-h-[500px]"
             >
               {/* IMAGEM DE FUNDO */}
               <div className="absolute inset-0 w-full h-full z-0 flex items-center justify-center bg-slate-950">
@@ -101,7 +101,7 @@ export default function AboutUs() {
               <div className="absolute inset-0 z-10 bg-gradient-to-t from-slate-950 via-slate-950/85 to-transparent/10" />
 
               {/* CONTEÚDO */}
-              <div className="relative z-20 mt-auto p-8 text-left flex flex-col gap-3">
+              <div className="relative z-20 mt-auto flex flex-col gap-3 p-6 text-left md:p-8">
                 <div>
                   <h3 className="text-xl font-bold text-white leading-tight group-hover:text-indigo-300 transition-colors duration-200">
                     {member.name}

@@ -33,15 +33,15 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-6 bg-white">
+    <section id="services" className="py-20 px-5 bg-white sm:px-6 md:py-24">
       <div className="max-w-5xl mx-auto">
 
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-12 md:mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
             What We Do
           </p>
-          <h2 className="text-5xl font-bold text-black leading-tight tracking-tight">
+          <h2 className="text-4xl font-bold text-black leading-tight tracking-tight sm:text-5xl">
             Our Core <br /> Competencies
           </h2>
         </div>
@@ -51,7 +51,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="grid grid-cols-[3rem_1fr_2fr] items-start gap-8 py-8"
+              className="grid grid-cols-1 items-start gap-4 py-8 sm:grid-cols-[3rem_1fr] lg:grid-cols-[3rem_1fr_2fr] lg:gap-8"
             >
               <span className="text-sm font-mono text-neutral-400 pt-1">
                 {String(index + 1).padStart(2, "0")}
@@ -59,7 +59,7 @@ export default function Services() {
               <h3 className="text-lg font-bold text-black">
                 {service.title}
               </h3>
-              <p className="text-neutral-500 leading-relaxed">
+              <p className="text-neutral-500 leading-relaxed sm:col-start-2 lg:col-start-auto">
                 {service.description}
               </p>
             </div>
@@ -67,13 +67,13 @@ export default function Services() {
         </div>
 
         {/* CTA */}
-        <div className="mt-20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-neutral-200 pt-12">
+        <div className="mt-16 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-neutral-200 pt-10 md:mt-20 md:pt-12">
           <p className="text-2xl font-bold text-black leading-snug">
             Ready to build <br /> something real?
           </p>
           <a
             href="#contact"
-            className="inline-block px-8 py-4 bg-black hover:bg-neutral-800 text-white font-semibold rounded-full transition-colors duration-200 whitespace-nowrap"
+            className="inline-block px-8 py-4 bg-black hover:bg-neutral-800 text-white font-semibold rounded-full transition-colors duration-200"
           >
             Talk to Galindo →
           </a>
