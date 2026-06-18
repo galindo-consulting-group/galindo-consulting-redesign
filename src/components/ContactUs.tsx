@@ -1,23 +1,24 @@
 export default function ContactUs() {
   return (
-    <section id="contact" className="py-24 px-6 bg-white border-b border-slate-200">
+    <section id="contact" className="py-24 px-6 bg-slate-950 border-b border-slate-200">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
             Contact
           </p>
-          <h2 className="text-6xl font-bold text-black leading-tight tracking-tight">
+          <h2 className="text-5xl font-bold text-white leading-tight tracking-tight transition-all duration-300 hover:translate-x-2">
             Hire us 
           </h2>
-          <p className="mt-4 max-w-2xl text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 max-w-2xl text-lg text-neutral-400 leading-relaxed">
             We are ready to transform your vision into reliable and scalable software.
             Tell us about your challenge and we'll develop the best technical proposal for your business.
           </p>
         </div>
 
+       
         <div className="grid gap-20 lg:grid-cols-[1.3fr_0.9fr]">
-          <div className="space-y-7">
-            <div className="rounded-[2rem] border border-slate-100 bg-white p-10 shadow-sm">
+          <div className="space-y-12">
+            <div className="rounded-[2rem] bg-slate-100 border border-slate-100 p-10 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">
                 How can we help?
               </h3>
@@ -31,7 +32,7 @@ export default function ContactUs() {
                   <p className="text-sm uppercase tracking-[0.24em] text-slate-400 mb-3">
                     Email
                   </p> 
-                  <p className="text-base font-semibold text-slate-900">
+                  <p className="text-base font-semibold text-slate-800">
                     president@galindoinc.com
                   </p>
                 </div>
@@ -40,14 +41,14 @@ export default function ContactUs() {
                   <p className="text-sm uppercase tracking-[0.24em] text-slate-400 mb-3">
                     Telephone
                   </p>
-                  <p className="text-base font-semibold text-slate-900">
+                  <p className="text-base font-semibold text-slate-800">
                     +1 703-881-7822
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-slate-100 bg-white p-10 shadow-sm">
+            <div className="rounded-[2rem] border border-slate-100 bg-white p-12 shadow-sm  transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
               <h4 className="text-xl font-bold text-slate-900 mb-3">
                 Send a quick message.
               </h4>
@@ -57,9 +58,9 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <form className="space-y-6 rounded-[2rem] border border-slate-100 bg-white p-10 shadow-sm">
+          <form className="space-y-6 rounded-[2rem] border border-slate-100 bg-white p-10 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
             <div>
-              <label className="text-sm font-semibold text-slate-700" htmlFor="name">
+              <label className="text-sm font-semibold text-slate-800" htmlFor="name">
                 Full name
               </label>
               <input
@@ -71,7 +72,7 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <label className="text-sm font-semibold text-slate-700" htmlFor="email">
+              <label className="text-sm font-semibold text-slate-800" htmlFor="email">
                 E-mail
               </label>
               <input
@@ -83,7 +84,7 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <label className="text-sm font-semibold text-slate-700" htmlFor="company">
+              <label className="text-sm font-semibold text-slate-800" htmlFor="company">
                 Company / Project
               </label>
               <input
@@ -95,7 +96,7 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <label className="text-sm font-semibold text-slate-700" htmlFor="message">
+              <label className="text-sm font-semibold text-slate-800" htmlFor="message">
                 Message
               </label>
               <textarea
@@ -108,7 +109,7 @@ export default function ContactUs() {
 
             <button
               type="submit"
-              className="inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-8 py-4 text-base font-semibold text-white transition-colors duration-200 hover:bg-gray-800"
+              className="inline-flex w-full items-center justify-center rounded-full bg-slate-800 px-8 py-4 text-base font-bold text-white transition-colors duration-200 hover:bg-gray-800"
             >
               Request proposal
             </button>

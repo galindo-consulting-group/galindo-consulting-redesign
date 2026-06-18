@@ -37,7 +37,7 @@ export default function NavBar() {
           className="group flex w-32 shrink-0 flex-col items-center leading-none text-slate-950 sm:w-36"
           aria-label="Galindo Consulting Group home"
         >
-          <span className="relative w-full px-4 text-center font-serif text-2xl font-bold italic tracking-tight text-indigo-700 sm:text-3xl">
+          <span className="relative w-full px-4 text-center font-serif text-2xl font-bold italic tracking-tight text-indigo-700 sm:text-3xl transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
             <span className="absolute inset-x-0 -top-1 h-8 rounded-[50%] border-2 border-sky-500 transition-colors group-hover:border-indigo-600 sm:h-9" />
             Galindo
           </span>

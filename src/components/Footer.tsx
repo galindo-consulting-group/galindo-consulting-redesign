@@ -24,10 +24,10 @@ export default function Footer() {
               className="inline-flex flex-col leading-none text-white"
               aria-label="Galindo Consulting Group home"
             >
-              <span className="font-serif text-4xl font-bold italic tracking-tight text-indigo-300">
+              <span className="font-serif text-4xl font-bold italic tracking-tight text-indigo-300  transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
                 Galindo
               </span>
-              <span className="mt-1 text-xs font-bold tracking-tight text-slate-500">
+              <span className="mt-1 text-xs font-bold tracking-tight text-slate-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
                 Consulting Group, Inc.
               </span>
             </a>
