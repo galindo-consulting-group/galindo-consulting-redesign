@@ -1,20 +1,22 @@
-import { useEffect, useState } from "react";
-
-const navItems = [
-  { label: "HOME", href: "#introduction" },
-  { label: "About Us", href: "#about" },
-  { label: "Our Story", href: "#projects" },
-  { label: "Our Services", href: "#services" },
-  { label: "Our Groups", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
+﻿import { useEffect, useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
+import { languageOptions } from "../locales";
 
 export default function NavBar() {
   const [isVisible, setIsVisible] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
+
+  const navItems = [
+    { label: t.nav.home, href: "#introduction" },
+    { label: t.nav.about, href: "#about" },
+    { label: t.nav.projects, href: "#projects" },
+    { label: t.nav.services, href: "#services" },
+    { label: t.nav.contact, href: "#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsVisible(window.scrollY > 80);
+      setIsVisible(window.scrollY > 72);
     };
 
     handleScroll();
@@ -25,20 +27,19 @@ export default function NavBar() {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full border-b border-slate-200/60 bg-white/80 shadow-[0_18px_45px_rgba(15,23,42,0.08)] backdrop-blur-md transition-all duration-500 ${
+      className={`fixed left-0 top-0 z-50 w-full border-b border-slate-200/70 bg-white/90 shadow-[0_18px_45px_rgba(15,23,42,0.08)] backdrop-blur-xl transition-all duration-500 ${
         isVisible
           ? "translate-y-0 opacity-100"
           : "-translate-y-full opacity-0 pointer-events-none"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-3 sm:min-h-20 sm:flex-row sm:gap-6 sm:px-6 lg:px-10">
+      <nav className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-10">
         <a
           href="#introduction"
-          className="group flex w-32 shrink-0 flex-col items-center leading-none text-slate-950 sm:w-36"
+          className="group flex shrink-0 flex-col leading-none text-slate-950"
           aria-label="Galindo Consulting Group home"
         >
-          <span className="relative w-full px-4 text-center font-serif text-2xl font-bold italic tracking-tight text-indigo-700 sm:text-3xl transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
-            <span className="absolute inset-x-0 -top-1 h-8 rounded-[50%] border-2 border-sky-500 transition-colors group-hover:border-indigo-600 sm:h-9" />
+          <span className="font-serif text-3xl font-bold italic tracking-tight text-indigo-700 transition-colors group-hover:text-sky-700">
             Galindo
           </span>
           <span className="mt-1 text-[11px] font-bold tracking-tight text-slate-500">
@@ -46,19 +47,37 @@ export default function NavBar() {
           </span>
         </a>
 
-        <div className="flex w-full flex-1 items-center overflow-x-auto sm:justify-end">
-          <ul className="flex min-w-max items-center gap-1 sm:gap-3 lg:gap-8">
+        <div className="flex min-w-0 flex-1 items-center justify-between gap-3 sm:justify-end">
+          <ul className="flex min-w-0 items-center gap-1 overflow-x-auto sm:gap-2 lg:gap-4">
             {navItems.map((item) => (
-              <li key={item.label}>
+              <li key={item.href}>
                 <a
                   href={item.href}
-                  className="flex h-10 items-center justify-center rounded-full border-2 border-transparent px-3 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-950 transition-all duration-300 hover:border-sky-500 hover:text-blue-600 focus-visible:border-sky-500 focus-visible:text-blue-600 focus-visible:outline-none sm:h-11 sm:px-5 sm:tracking-[0.24em] lg:px-6 lg:tracking-[0.32em]"
+                  className="flex h-10 items-center justify-center rounded-full px-3 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-700 transition-colors duration-200 hover:bg-slate-100 hover:text-indigo-700 focus-visible:bg-slate-100 focus-visible:text-indigo-700 focus-visible:outline-none sm:px-4"
                 >
                   <span className="whitespace-nowrap">{item.label}</span>
                 </a>
               </li>
             ))}
           </ul>
+
+          <div className="flex shrink-0 rounded-full border border-slate-200 bg-slate-50 p-1" aria-label="Language selector">
+            {languageOptions.map((option) => (
+              <button
+                key={option.code}
+                type="button"
+                onClick={() => setLanguage(option.code)}
+                className={`h-8 rounded-full px-3 text-xs font-bold transition-colors ${
+                  language === option.code
+                    ? "bg-slate-950 text-white shadow-sm"
+                    : "text-slate-500 hover:text-slate-950"
+                }`}
+                aria-pressed={language === option.code}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
         </div>
       </nav>
     </header>

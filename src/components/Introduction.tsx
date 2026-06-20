@@ -1,101 +1,88 @@
+﻿import { useLanguage } from "../context/LanguageContext";
+
 export default function Introduction() {
-  const metrics = [
-    { value: "18+", label: "Years of Engineering Governance" },
-    { value: "100%", label: "Agile Compliance & Velocity" },
-    { value: "50k+", label: "Audited Production Hours" },
-  ];
+  const { t } = useLanguage();
 
   return (
-    <section id="introduction" className="py-32 px-8 md:px-16 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white border-b border-slate-950 relative overflow-hidden w-full">
-      
-      {/* Luzes de fundo corporativas e grid técnico expandido */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:5rem_5rem] opacity-25 z-0" />
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[160px] pointer-events-none z-0" />
-      <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-sky-500/5 rounded-full blur-[130px] pointer-events-none z-0" />
+    <section
+      id="introduction"
+      className="relative overflow-hidden bg-slate-950 px-5 pb-20 pt-24 text-white sm:px-6 sm:pb-24 sm:pt-28 lg:px-10 lg:pb-28"
+    >
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.12)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-indigo-500/20 to-transparent" />
 
-      {/* Container expandido para tomar as laterais da tela */}
-      <div className="max-w-[90rem] mx-auto relative z-10 w-full">
-        
-        {/* 1. SEÇÃO PRINCIPAL — MANIFESTO IMPACTANTE DE LARGURA TOTAL */}
-        <div className="w-full text-left mb-24">
-          <div className="mb-8">
-            <span className="text-[11px] font-mono font-bold uppercase tracking-[0.2em] text-indigo-400 bg-indigo-950/80 border border-indigo-500/30 px-3 py-1.5 rounded-md shadow-inner inline-block">
-              01 · Introduction
+      <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="grid min-h-[620px] grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+          <div>
+            <span className="inline-flex rounded-full border border-indigo-300/25 bg-indigo-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-indigo-200">
+              {t.introduction.eyebrow}
             </span>
+
+            <h1 className="mt-8 max-w-5xl text-5xl font-black leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">
+              {t.introduction.title}
+            </h1>
+
+            <p className="mt-8 max-w-3xl text-2xl font-semibold leading-snug text-sky-100 sm:text-3xl">
+              {t.introduction.subtitle}
+            </p>
+
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+              {t.introduction.description}
+            </p>
+
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#contact"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.12em] text-slate-950 transition-colors hover:bg-sky-100"
+              >
+                {t.introduction.primaryCta}
+              </a>
+              <a
+                href="#services"
+                className="inline-flex h-12 items-center justify-center rounded-full border border-white/25 px-6 text-sm font-bold uppercase tracking-[0.12em] text-white transition-colors hover:border-white/60 hover:bg-white/10"
+              >
+                {t.introduction.secondaryCta}
+              </a>
+            </div>
           </div>
-          
-          <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-[1.05] w-full max-w-6xl">
-            Galindo Consulting <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-neutral-100 via-indigo-200 to-slate-500">
-              Group Inc.
-            </span>
-          </h1>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_2fr] gap-10 mt-10 pt-10 border-t border-slate-800/40 items-start">
-            <p className="text-2xl font-mono text-indigo-400 font-semibold uppercase tracking-wider leading-tight">
-              Real Management. <br />
-              Real Coding. <br />
-              Real People.
-            </p>
-            <p className="text-xl text-slate-400 font-light leading-relaxed max-w-4xl border-l-2 border-indigo-500 pl-6 md:pl-8">
-              Since 2007, we have engineered high-availability software architectures and implemented sophisticated agile project governance for businesses that demand zero operational friction.
-            </p>
+
+          <div className="grid gap-4">
+            {t.introduction.metrics.map((metric) => (
+              <div
+                key={metric.label}
+                className="rounded-lg border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-black/20 backdrop-blur"
+              >
+                <span className="block font-mono text-5xl font-black tracking-tight text-white sm:text-6xl">
+                  {metric.value}
+                </span>
+                <span className="mt-3 block text-sm font-bold uppercase tracking-[0.16em] text-slate-300">
+                  {metric.label}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* 2. METRICS — DESIGN CRIATIVO EM LAYOUT DE CARDS VAZADOS */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full mb-24">
-          {metrics.map((metric, index) => (
-            <div 
-              key={metric.label} 
-              className="relative flex flex-col p-8 bg-slate-900/30 backdrop-blur-sm rounded-2xl border border-slate-800/60 group hover:border-indigo-500/40 transition-all duration-300 shadow-lg"
-            >
-              {/* Identificador minúsculo de blueprint */}
-              <span className="absolute top-4 right-6 text-[10px] font-mono text-slate-600 group-hover:text-indigo-400 transition-colors duration-300">
-                // SYS_METRIC_0{index + 1}
-              </span>
-              <span className="text-6xl md:text-7xl font-black tracking-tighter text-white font-mono transition-transform duration-300 group-hover:translate-x-2 block">
-                {metric.value}
-              </span>
-              <span className="text-xs uppercase tracking-wider text-slate-400 font-mono font-bold mt-4 block border-t border-slate-800/60 pt-4">
-                {metric.label}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        {/* 3. PHILOSOPHY & EXECUTIVE LEADERSHIP */}
-        <div className="grid grid-cols-1 lg:grid-cols-[2.2fr_1.5fr] gap-12 lg:gap-20 items-stretch w-full">
-          <div className="flex flex-col justify-center gap-6 p-8 bg-slate-950/40 rounded-2xl border border-slate-800/40">
-            <h3 className="text-2xl font-bold tracking-tight text-white font-mono text-indigo-400">
-              Our Operational Thesis
-            </h3>
-            <p className="text-slate-400 leading-relaxed text-lg font-light">
-              We operate under a strict execution model where elite front-end engineering and modular backend stability must meet radical project transparency. We specialize in mitigating architectural drift, turning complex technical debt into clean, predictable delivery vectors that align directly with shareholder expectations.
-            </p>
+        <div className="grid gap-8 border-t border-white/10 pt-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <h2 className="text-2xl font-black tracking-tight text-white sm:text-3xl">
+              {t.introduction.thesisTitle}
+            </h2>
           </div>
-
-          {/* LEADERSHIP BRAND BLOCK */}
-          <div className="p-8 md:p-10 bg-gradient-to-br from-slate-900 to-indigo-950/40 rounded-2xl border border-indigo-950/80 backdrop-blur-md shadow-2xl relative flex flex-col justify-between group hover:border-indigo-500/30 transition-all duration-300">
-            <div className="absolute top-0 right-12 w-24 h-[1px] bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
-            <div>
-              <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-indigo-400 block mb-3 font-bold">
-                Executive Governance
-              </span>
-              <h4 className="text-xl font-bold text-slate-100 tracking-tight leading-snug">
-                Technical Direction & Global Portfolio Strategy
-              </h4>
-            </div>
-            
-            <div className="mt-8 pt-6 border-t border-slate-800/60">
-              <p className="text-slate-400 text-sm leading-relaxed italic font-light relative">
-                <span className="text-3xl text-indigo-500 font-serif absolute -top-4 -left-2 opacity-30">“</span>
-                Ensuring that every compiled repository, every cloud infrastructure deployment, and every iterative sprint velocity matches the rigorous compliance standards our corporate clients command.
-              </p>
+          <div>
+            <p className="text-lg leading-8 text-slate-300">{t.introduction.thesis}</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              {t.introduction.proofPoints.map((point) => (
+                <span
+                  key={point}
+                  className="rounded-full border border-sky-300/20 bg-sky-300/10 px-4 py-2 text-sm font-semibold text-sky-100"
+                >
+                  {point}
+                </span>
+              ))}
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -1,84 +1,51 @@
-const services = [
-  {
-    title: "UI/UX Design",
-    description:
-      "Interfaces built for usability, accessibility, and conversion. From wireframe to navigable prototype, we deliver experiences users understand on the first interaction.",
-  },
-  {
-    title: "Project Collaboration",
-    description:
-      "Agile project management with defined sprints, prioritized backlog, and transparent communication. We embed into your team or take full ownership of project coordination.",
-  },
-  {
-    title: "Marketing Strategy",
-    description:
-      "Data-driven strategies that connect product and audience. Full-funnel coverage: positioning, growth, and campaign performance analysis.",
-  },
-  {
-    title: "API Integration",
-    description:
-      "We connect legacy systems, SaaS platforms, and external services via REST and GraphQL. Robust integrations architected with authentication, rate limiting, and fault tolerance.",
-  },
-  {
-    title: "Custom Software Development",
-    description:
-      "Tailor-made solutions for problems off-the-shelf tools can't solve. From MVPs to enterprise systems, we deliver scalable, testable, and documented code.",
-  },
-  {
-    title: "SEO & Analytics",
-    description:
-      "Technical SEO optimization combined with analytical instrumentation. We implement event tracking, dashboards, and reports that turn traffic into decisions.",
-  },
-];
+﻿import { useLanguage } from "../context/LanguageContext";
 
 export default function Services() {
-  return (
-    <section id="services" className="py-20 px-5 bg-white sm:px-6 md:py-24">
-      <div className="max-w-5xl mx-auto">
+  const { t } = useLanguage();
 
-        {/* Header */}
-        <div className="mb-12 md:mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
-            What We Do
+  return (
+    <section id="services" className="bg-slate-50 px-5 py-20 sm:px-6 md:py-24 lg:px-10">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-indigo-700">
+              {t.services.eyebrow}
+            </p>
+            <h2 className="mt-4 text-4xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl">
+              {t.services.title}
+            </h2>
+          </div>
+          <p className="max-w-3xl text-lg leading-8 text-slate-600 lg:justify-self-end">
+            {t.services.intro}
           </p>
-          <h2 className="text-4xl font-bold text-black leading-tight tracking-tight sm:text-5xl">
-            Our Core <br /> Competencies
-          </h2>
         </div>
 
-        {/* Service List */}
-        <div className="divide-y divide-neutral-200">
-          {services.map((service, index) => (
-            <div
+        <div className="mt-12 grid grid-cols-1 border-t border-slate-200 md:grid-cols-2 lg:grid-cols-3">
+          {t.services.items.map((service, index) => (
+            <article
               key={service.title}
-              className="grid grid-cols-1 items-start gap-4 py-8 sm:grid-cols-[3rem_1fr] lg:grid-cols-[3rem_1fr_2fr] lg:gap-8"
+              className="border-b border-slate-200 px-0 py-8 md:px-6 lg:min-h-[270px] lg:border-r lg:last:border-r-0"
             >
-              <span className="text-sm font-mono text-neutral-400 pt-1">
+              <span className="font-mono text-sm text-slate-400">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-lg font-bold text-black">
+              <h3 className="mt-5 text-2xl font-black leading-tight text-slate-950">
                 {service.title}
               </h3>
-              <p className="text-neutral-500 leading-relaxed sm:col-start-2 lg:col-start-auto">
-                {service.description}
-              </p>
-            </div>
+              <p className="mt-4 text-base leading-7 text-slate-600">{service.description}</p>
+            </article>
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-16 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-neutral-200 pt-10 md:mt-20 md:pt-12">
-          <p className="text-2xl font-bold text-black leading-snug">
-            Ready to build <br /> something real?
-          </p>
+        <div className="mt-12 flex flex-col gap-5 rounded-lg bg-slate-950 p-6 text-white sm:flex-row sm:items-center sm:justify-between sm:p-8">
+          <p className="text-2xl font-black leading-snug">{t.services.ctaTitle}</p>
           <a
             href="#contact"
-            className="inline-block px-8 py-4 bg-black hover:bg-neutral-800 text-white font-semibold rounded-full transition-colors duration-200"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.12em] text-slate-950 transition-colors hover:bg-sky-100"
           >
-            Talk to Galindo →
+            {t.services.ctaLabel}
           </a>
         </div>
-
       </div>
     </section>
   );

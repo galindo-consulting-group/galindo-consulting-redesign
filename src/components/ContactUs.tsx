@@ -1,117 +1,108 @@
+﻿import { useLanguage } from "../context/LanguageContext";
+
 export default function ContactUs() {
+  const { t } = useLanguage();
+
   return (
-    <section id="contact" className="py-24 px-6 bg-slate-950 border-b border-slate-200">
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-4">
-            Contact
+    <section id="contact" className="bg-white px-5 py-20 sm:px-6 md:py-24 lg:px-10">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-indigo-700">
+            {t.contact.eyebrow}
           </p>
-          <h2 className="text-5xl font-bold text-white leading-tight tracking-tight transition-all duration-300 hover:translate-x-2">
-            Hire us 
+          <h2 className="mt-4 text-5xl font-black leading-tight tracking-tight text-slate-950 sm:text-6xl">
+            {t.contact.title}
           </h2>
-          <p className="mt-4 max-w-2xl text-lg text-neutral-400 leading-relaxed">
-            We are ready to transform your vision into reliable and scalable software.
-            Tell us about your challenge and we'll develop the best technical proposal for your business.
-          </p>
+          <p className="mt-5 text-lg leading-8 text-slate-600">{t.contact.description}</p>
         </div>
 
-       
-        <div className="grid gap-20 lg:grid-cols-[1.3fr_0.9fr]">
-          <div className="space-y-12">
-            <div className="rounded-[2rem] bg-slate-100 border border-slate-100 p-10 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                How can we help?
-              </h3>
-              <p className="text-base leading-relaxed text-slate-600">
-                We offer bespoke development, systems integration, digital strategy, and
-                ongoing support for agile operations. Choose the best channel and let's start the conversation.
-              </p>
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="space-y-6">
+            <div className="rounded-lg border border-slate-200 bg-slate-50 p-6 sm:p-8">
+              <h3 className="text-2xl font-black text-slate-950">{t.contact.helpTitle}</h3>
+              <p className="mt-4 text-base leading-7 text-slate-600">{t.contact.helpText}</p>
 
-              <div className="mt-8 grid gap-8 sm:grid-cols-">
-                <div className="rounded-3xl bg-slate-50 p-5 border border-slate-200">
-                  <p className="text-sm uppercase tracking-[0.24em] text-slate-400 mb-3">
-                    Email
-                  </p> 
-                  <p className="text-base font-semibold text-slate-800">
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-lg border border-slate-200 bg-white p-5">
+                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
+                    {t.contact.emailLabel}
+                  </p>
+                  <p className="mt-3 break-words text-base font-bold text-slate-900">
                     president@galindoinc.com
                   </p>
                 </div>
 
-                <div className="rounded-3xl bg-slate-50 p-5 border border-slate-200">
-                  <p className="text-sm uppercase tracking-[0.24em] text-slate-400 mb-3">
-                    Telephone
+                <div className="rounded-lg border border-slate-200 bg-white p-5">
+                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
+                    {t.contact.phoneLabel}
                   </p>
-                  <p className="text-base font-semibold text-slate-800">
-                    +1 703-881-7822
-                  </p>
+                  <p className="mt-3 text-base font-bold text-slate-900">+1 703-881-7822</p>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-slate-100 bg-white p-12 shadow-sm  transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
-              <h4 className="text-xl font-bold text-slate-900 mb-3">
-                Send a quick message.
-              </h4>
-              <p className="text-base text-slate-600 leading-relaxed">
-                We prefer to respond quickly with a straightforward action plan for your project.
-              </p>
+            <div className="rounded-lg border border-slate-200 bg-slate-950 p-6 text-white sm:p-8">
+              <h4 className="text-xl font-black">{t.contact.noteTitle}</h4>
+              <p className="mt-3 text-base leading-7 text-slate-300">{t.contact.noteText}</p>
             </div>
           </div>
 
-          <form className="space-y-6 rounded-[2rem] border border-slate-100 bg-white p-10 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
-            <div>
-              <label className="text-sm font-semibold text-slate-800" htmlFor="name">
-                Full name
-              </label>
-              <input
-                id="name"
-                type="text"
-                placeholder="Your name"
-                className="mt-3 w-full rounded-3xl border border-slate-200 bg-slate-50 px-5 py-4 text-base text-slate-900 outline-none transition-colors duration-200 focus:border-slate-400 focus:bg-white"
-              />
+          <form className="rounded-lg border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/70 sm:p-8">
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label className="text-sm font-bold text-slate-800" htmlFor="name">
+                  {t.contact.form.name}
+                </label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder={t.contact.form.namePlaceholder}
+                  className="mt-3 h-12 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 text-base text-slate-900 outline-none transition-colors focus:border-indigo-400 focus:bg-white"
+                />
+              </div>
+
+              <div>
+                <label className="text-sm font-bold text-slate-800" htmlFor="email">
+                  {t.contact.form.email}
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder={t.contact.form.emailPlaceholder}
+                  className="mt-3 h-12 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 text-base text-slate-900 outline-none transition-colors focus:border-indigo-400 focus:bg-white"
+                />
+              </div>
             </div>
 
-            <div>
-              <label className="text-sm font-semibold text-slate-800" htmlFor="email">
-                E-mail
-              </label>
-              <input
-                id="email"
-                type="email"
-                placeholder="your@exemplo.com"
-                className="mt-3 w-full rounded-3xl border border-slate-200 bg-slate-50 px-5 py-4 text-base text-slate-900 outline-none transition-colors duration-200 focus:border-slate-400 focus:bg-white"
-              />
-            </div>
-
-            <div>
-              <label className="text-sm font-semibold text-slate-800" htmlFor="company">
-                Company / Project
+            <div className="mt-5">
+              <label className="text-sm font-bold text-slate-800" htmlFor="company">
+                {t.contact.form.company}
               </label>
               <input
                 id="company"
                 type="text"
-                placeholder="Company or project name"
-                className="mt-3 w-full rounded-3xl border border-slate-200 bg-slate-50 px-5 py-4 text-base text-slate-900 outline-none transition-colors duration-200 focus:border-slate-400 focus:bg-white"
+                placeholder={t.contact.form.companyPlaceholder}
+                className="mt-3 h-12 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 text-base text-slate-900 outline-none transition-colors focus:border-indigo-400 focus:bg-white"
               />
             </div>
 
-            <div>
-              <label className="text-sm font-semibold text-slate-800" htmlFor="message">
-                Message
+            <div className="mt-5">
+              <label className="text-sm font-bold text-slate-800" htmlFor="message">
+                {t.contact.form.message}
               </label>
               <textarea
                 id="message"
-                rows={6}
-                placeholder="Briefly explain your needs."
-                className="mt-3 w-full rounded-[1.5rem] border border-slate-200 bg-slate-50 px-5 py-4 text-base text-slate-900 outline-none transition-colors duration-200 focus:border-slate-400 focus:bg-white"
+                rows={7}
+                placeholder={t.contact.form.messagePlaceholder}
+                className="mt-3 w-full resize-none rounded-lg border border-slate-200 bg-slate-50 px-4 py-4 text-base text-slate-900 outline-none transition-colors focus:border-indigo-400 focus:bg-white"
               />
             </div>
 
             <button
               type="submit"
-              className="inline-flex w-full items-center justify-center rounded-full bg-slate-800 px-8 py-4 text-base font-bold text-white transition-colors duration-200 hover:bg-gray-800"
+              className="mt-6 inline-flex h-12 w-full items-center justify-center rounded-full bg-slate-950 px-8 text-sm font-bold uppercase tracking-[0.12em] text-white transition-colors hover:bg-indigo-800"
             >
-              Request proposal
+              {t.contact.form.submit}
             </button>
           </form>
         </div>
@@ -119,4 +110,3 @@ export default function ContactUs() {
     </section>
   );
 }
-
