@@ -54,13 +54,13 @@ export const es: typeof en = {
       },
       {
         name: "Rodrigo Schidmit",
-        role: "Desarrollador Junior",
+        role: "Solutions Engineer",
         description:
           "Apoya la entrega responsive de funcionalidades, componentes reutilizables y validación continua de calidad.",
       },
       {
         name: "Hiran Henriques",
-        role: "Desarrollador Junior",
+        role: "Solutions Engineer",
         description:
           "Trabaja en consumo de APIs, lógica de interacción, marcado semántico y detalles limpios de implementación.",
       },

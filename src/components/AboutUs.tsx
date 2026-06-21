@@ -17,22 +17,22 @@ export default function AboutUs() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="bg-slate-900 px-5 py-20 text-slate-100 sm:px-6 md:py-24 lg:px-10">
-      <div className="mx-auto max-w-7xl">
+    <section id="about" className="gcg-shell reveal bg-[#07080c] px-5 py-24 text-slate-100 sm:px-6 lg:px-10">
+      <div className="relative z-10 mx-auto max-w-7xl">
         <div className="mb-14 max-w-5xl">
-          <span className="inline-flex rounded-full border border-indigo-400/30 bg-indigo-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-indigo-200">
+          <span className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">
             {t.about.eyebrow}
           </span>
-          <h2 className="mt-6 text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h2 className="mt-5 max-w-4xl font-serif text-4xl font-normal leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
             {t.about.title}
           </h2>
-          <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
+          <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-400">
             {t.about.description}
           </p>
         </div>
 
-        <div className="mb-6 flex items-center justify-between border-y border-slate-700/70 py-4">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-slate-400">
+        <div className="mb-6 flex items-center justify-between border-y border-white/10 py-4">
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-slate-500">
             {t.about.teamIntro}
           </p>
           <p className="font-mono text-sm text-slate-500">05</p>
@@ -45,26 +45,26 @@ export default function AboutUs() {
             return (
               <article
                 key={member.name}
-                className="group flex min-h-[520px] flex-col overflow-hidden rounded-lg border border-slate-700 bg-slate-950 shadow-xl shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-indigo-300/50"
+                className="gcg-card gcg-topline flex min-h-[520px] flex-col overflow-hidden rounded-[18px]"
               >
-                <div className="relative h-72 shrink-0 overflow-hidden bg-slate-800">
+                <div className="relative h-72 shrink-0 overflow-hidden bg-[#0f1117]">
                   <img
                     src={imageData.image}
                     alt={member.name}
-                    className={`h-full w-full object-cover grayscale-[15%] transition duration-700 group-hover:scale-105 group-hover:grayscale-0 ${imageData.imagePlacement}`}
+                    className={`h-full w-full object-cover grayscale-[20%] transition duration-700 group-hover:scale-105 ${imageData.imagePlacement}`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
-                  <span className="absolute left-4 top-4 rounded-full border border-white/20 bg-black/40 px-3 py-1 font-mono text-xs font-bold text-white backdrop-blur">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#07080c] via-transparent to-transparent" />
+                  <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-black/40 px-3 py-1 font-mono text-xs font-bold text-white backdrop-blur">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                 </div>
 
                 <div className="flex flex-1 flex-col p-5">
-                  <h3 className="text-2xl font-black leading-tight tracking-tight text-white">
+                  <h3 className="font-serif text-2xl font-normal leading-tight tracking-tight text-white">
                     {member.name}
                   </h3>
-                  <p className="mt-2 text-sm font-bold text-indigo-300">{member.role}</p>
-                  <p className="mt-4 text-sm leading-6 text-slate-300">{member.description}</p>
+                  <p className="mt-2 text-sm font-bold text-[#00e5ff]">{member.role}</p>
+                  <p className="mt-4 text-sm leading-6 text-slate-400">{member.description}</p>
                 </div>
               </article>
             );

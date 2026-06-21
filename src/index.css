@@ -1,11 +1,160 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  background: #07080c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.gcg-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.gcg-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 18% 12%, rgba(0, 229, 255, 0.08), transparent 26rem),
+    radial-gradient(circle at 82% 8%, rgba(124, 58, 237, 0.08), transparent 24rem),
+    linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: auto, auto, 4rem 4rem, 4rem 4rem;
+}
+
+.gcg-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #00e5ff;
+}
+
+.gcg-kicker::before {
+  content: "";
+  width: 1.35rem;
+  height: 1px;
+  background: #00e5ff;
+}
+
+.gcg-card {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #141720;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28);
+  transition: border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
+}
+
+.gcg-card:hover {
+  border-color: rgba(0, 229, 255, 0.24);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+  transform: translateY(-4px);
+}
+
+.gcg-topline {
+  position: relative;
+  overflow: hidden;
+}
+
+.gcg-topline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00e5ff, #7c3aed);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.gcg-topline:hover::before {
+  transform: scaleX(1);
+}
+
+.gcg-pill {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: #8beeff;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.gcg-pill:hover {
+  border-color: rgba(0, 229, 255, 0.35);
+  background: rgba(0, 229, 255, 0.08);
+  color: #00e5ff;
+}
+
+.gcg-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(90deg, rgba(0, 229, 255, 0.08), rgba(124, 58, 237, 0.08));
+}
+
+.gcg-marquee-track {
+  display: inline-flex;
+  min-width: max-content;
+  animation: gcg-marquee 30s linear infinite;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gcg-fade-up {
+  opacity: 0;
+  animation: gcg-slide-up 0.75s ease forwards;
+}
+
+.gcg-fade-delay-1 { animation-delay: 0.1s; }
+.gcg-fade-delay-2 { animation-delay: 0.22s; }
+.gcg-fade-delay-3 { animation-delay: 0.34s; }
+.gcg-fade-delay-4 { animation-delay: 0.46s; }
+
+@keyframes gcg-slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gcg-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gcg-marquee-track,
+  .gcg-fade-up {
+    animation: none;
+    opacity: 1;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .gcg-card,
+  .gcg-pill {
+    transition: none;
+  }
 }

@@ -52,13 +52,13 @@
       },
       {
         name: "Rodrigo Schidmit",
-        role: "Junior Developer",
+        role: "Solutions Engineer",
         description:
           "Supports responsive feature delivery, reusable interface components, and continuous quality validation.",
       },
       {
         name: "Hiran Henriques",
-        role: "Junior Developer",
+        role: "Solutions Engineer",
         description:
           "Works on API consumption, interaction logic, semantic markup, and clean implementation details.",
       },

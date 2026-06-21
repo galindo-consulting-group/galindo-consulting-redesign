@@ -5,10 +5,13 @@ import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import { useRevealOnScroll } from "./hooks/useRevealOnScroll";
 
 function App() {
+  useRevealOnScroll();
+
   return (
-    <main className="min-h-screen bg-white text-slate-950 antialiased">
+    <main className="min-h-screen bg-[#07080c] text-slate-100 antialiased">
       <NavBar />
       <Introduction />
       <AboutUs />

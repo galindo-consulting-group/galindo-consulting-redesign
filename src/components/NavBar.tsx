@@ -27,33 +27,33 @@ export default function NavBar() {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full border-b border-slate-200/70 bg-white/90 shadow-[0_18px_45px_rgba(15,23,42,0.08)] backdrop-blur-xl transition-all duration-500 ${
+      className={`fixed left-0 top-0 z-50 w-full transition-all duration-500 ${
         isVisible
           ? "translate-y-0 opacity-100"
           : "-translate-y-full opacity-0 pointer-events-none"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-10">
+      <nav className="mx-auto mt-3 flex max-w-7xl flex-col gap-3 rounded-none border border-white/10 bg-[#07080c]/86 px-4 py-3 shadow-[0_18px_60px_rgba(0,0,0,0.38)] backdrop-blur-2xl sm:flex-row sm:items-center sm:justify-between sm:rounded-full sm:px-5 lg:px-6">
         <a
           href="#introduction"
-          className="group flex shrink-0 flex-col leading-none text-slate-950"
+          className="group flex shrink-0 flex-col leading-none"
           aria-label="Galindo Consulting Group home"
         >
-          <span className="font-serif text-3xl font-bold italic tracking-tight text-indigo-700 transition-colors group-hover:text-sky-700">
+          <span className="font-serif text-3xl font-bold italic tracking-tight text-white transition-colors group-hover:text-[#00e5ff]">
             Galindo
           </span>
-          <span className="mt-1 text-[11px] font-bold tracking-tight text-slate-500">
+          <span className="mt-1 text-[11px] font-bold tracking-tight text-slate-500 transition-colors group-hover:text-slate-300">
             Consulting Group, Inc.
           </span>
         </a>
 
         <div className="flex min-w-0 flex-1 items-center justify-between gap-3 sm:justify-end">
-          <ul className="flex min-w-0 items-center gap-1 overflow-x-auto sm:gap-2 lg:gap-4">
+          <ul className="flex min-w-0 items-center gap-1 overflow-x-auto sm:gap-2 lg:gap-3">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="flex h-10 items-center justify-center rounded-full px-3 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-700 transition-colors duration-200 hover:bg-slate-100 hover:text-indigo-700 focus-visible:bg-slate-100 focus-visible:text-indigo-700 focus-visible:outline-none sm:px-4"
+                  className="flex h-10 items-center justify-center rounded-full border border-transparent px-3 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-400 transition-all duration-200 hover:border-[#00e5ff]/25 hover:bg-[#00e5ff]/10 hover:text-[#00e5ff] focus-visible:border-[#00e5ff]/40 focus-visible:bg-[#00e5ff]/10 focus-visible:text-[#00e5ff] focus-visible:outline-none sm:px-4"
                 >
                   <span className="whitespace-nowrap">{item.label}</span>
                 </a>
@@ -61,7 +61,7 @@ export default function NavBar() {
             ))}
           </ul>
 
-          <div className="flex shrink-0 rounded-full border border-slate-200 bg-slate-50 p-1" aria-label="Language selector">
+          <div className="flex shrink-0 rounded-full border border-white/10 bg-white/[0.04] p-1" aria-label="Language selector">
             {languageOptions.map((option) => (
               <button
                 key={option.code}
@@ -69,8 +69,8 @@ export default function NavBar() {
                 onClick={() => setLanguage(option.code)}
                 className={`h-8 rounded-full px-3 text-xs font-bold transition-colors ${
                   language === option.code
-                    ? "bg-slate-950 text-white shadow-sm"
-                    : "text-slate-500 hover:text-slate-950"
+                    ? "bg-[#00e5ff] text-[#07080c] shadow-[0_8px_24px_rgba(0,229,255,0.22)]"
+                    : "text-slate-500 hover:text-white"
                 }`}
                 aria-pressed={language === option.code}
               >
