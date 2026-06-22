@@ -8,9 +8,7 @@ export const pt: typeof en = {
     title: "Galindo Consulting Group Inc.",
     subtitle: "Liderança sênior de software para equipes de SaaS, IA e produto.",
     statsLine: "18+ anos de experiência 4100+ projetos entregues",
-    sectorsLine: "SaaS • IA • Saúde • Educação • Enterprise",
-    proofStrip: "18+ anos de experiência • Entrega liderada por seniores • SaaS, IA, Mobile & Cloud",
-    description: "Ajudamos fundadores e empresas em crescimento a arquitetar, construir e escalar produtos de software com liderança de CTO fracionado e execução sênior de engenharia.",
+    sectorsLine: "SaaS • IA • Saúde • Educação • Enterprise",    description: "",
     primaryCta: "Agendar chamada de descoberta",
     secondaryCta: "Enviar mensagem",
     metrics: [
@@ -29,16 +27,18 @@ export const pt: typeof en = {
     leadershipTitle: "Executive Leadership",
     leadershipIntro: "Operadores seniores e líderes técnicos guiam estratégia, arquitetura, entrega e resultados dos clientes.",
     leaders: [
-      { name: "Ivan", role: "General Manager", description: "Guia operações, alinhamento de entrega e coordenação executiva nos engajamentos com clientes." },
-      { name: "Monica", role: "CEO & Partner", description: "Lidera estratégia de negócio, relacionamento com clientes e desenvolvimento de parcerias de longo prazo." },
-      { name: "Jorge", role: "CEO", description: "Apoia direção executiva, estratégia de crescimento e liderança organizacional." },
-      { name: "Carlos", role: "CEO & Partner", description: "Conduz estratégia de parceiros, relações enterprise e tomada de decisão operacional." },
-      { name: "Sergio Pereyra", role: "Engineering Manager & CTO", description: "Lidera estratégia técnica, revisões de arquitetura, governança de engenharia e execução sênior." },
+      { name: "Jorge Galindo", role: "CEO, Galindo Consulting Group", description: "Fornece liderança executiva geral, visão da empresa e direção estratégica global em operações e parcerias." },
+      { name: "Carlos Galindo", role: "President & Co-Founder", description: "Impulsiona expansão de negócios, iniciativas estratégicas e relacionamentos de alto nível com clientes globais." },
+      { name: "Sergio Pereyra", role: "Global Engineering & Delivery Director", description: "Lidera entrega global de software, arquitetura técnica e execução de engenharia em times distribuídos e sistemas de clientes." },
+      { name: "Monica Lavayen", role: "Chief Operations & Finance Lead", description: "Supervisiona operações, planejamento financeiro, gestão de recursos e eficiência organizacional em todas as divisões." },
+      { name: "Ivan Szabo", role: "General Manager, E-Commerce & Digital Platforms (Bolivia)", description: "Lidera estratégia regional de e-commerce, operações de plataforma e crescimento de comércio digital na Bolívia." },
     ],
     teamIntro: "Time de produto e engenharia",
     members: [
       { name: "Clariana Galindo", role: "Product Strategy & Delivery Lead", description: "Conecta estratégia de produto com implementação, estruturando arquitetura SaaS, modelos de dados seguros e fluxos com IA." },
       { name: "Ruan Victor", role: "Desenvolvedor Sênior", description: "Constrói sistemas front-end modernos, interfaces reativas e experiências performáticas para múltiplas plataformas." },
+      { name: "Bryan", role: "Desenvolvedor Sênior", description: "Contribui com desenvolvimento sênior em aplicações escaláveis, implementação front-end e fluxos de integração." },
+      { name: "Edwin", role: "Desenvolvedor Sênior", description: "Apoia execução sênior de engenharia em produtos escaláveis, integrações e aplicações prontas para produção." },
       { name: "Rodrigo Schidmit", role: "Solutions Engineer", description: "Apoia entrega responsiva de funcionalidades, componentes reutilizáveis e validação contínua de qualidade." },
       { name: "Hiran Henriques", role: "Solutions Engineer", description: "Atua em consumo de APIs, lógica de interação, marcação semântica e detalhes limpos de implementação." },
     ],
@@ -48,11 +48,9 @@ export const pt: typeof en = {
     title: "Categorias de negócio, resultados mensuráveis e software pronto para produção.",
     description: "Um portfólio focado em SaaS, IA, mobile, gaming e educação, construído ao redor de resultados de negócio.",
     items: [
-      { title: "Plataforma B2B SaaS & Pagamentos", label: "NextBlock", description: "Construímos e escalamos uma plataforma SaaS crítica com pagamentos, automação e fluxos operacionais.", outcome: "Processou $250K+ em transações nos primeiros 60 dias." },
-      { title: "Plataforma de Produtividade com IA", label: "MentalPilot", description: "Insights com IA e automação de fluxos para produtividade, planejamento e orientação inteligente.", outcome: "Insights personalizados e automação entregues com arquitetura SaaS moderna." },
-      { title: "Plataforma Mobile Commerce", label: "Beepr", description: "Experiência mobile commerce em produção com geolocalização, infraestrutura escalável e fluxos nativos.", outcome: "Produto mobile lançado em produção com infraestrutura escalável." },
-      { title: "Plataforma de Entrevistas com IA", label: "Interviewiz", description: "Preparação de entrevistas e automação inteligente de workflows para resultados repetíveis.", outcome: "Workflows inteligentes automatizados para preparação personalizada." },
-      { title: "Plataforma Consumer Gaming", label: "GTA Geoguesser", description: "Plataforma web consumer projetada para compartilhamento, carregamento rápido e alto volume de usuários.", outcome: "Atendendo 50.000+ usuários mensais." },
+      { title: "Plataforma de Agendamento com IA & Workforce", label: "SaaS", description: "Plataforma de agendamento e operações para reservas, automação e coordenação de equipes.", outcome: "Construída em torno de fluxos SaaS, lógica de agendamento e experiências escaláveis." },
+      { title: "Plataforma Mobile Commerce", label: "Beepr", description: "Produto mobile commerce com geolocalização, fluxos transacionais e experiência pronta para produção.", outcome: "Experiência mobile desenhada para comércio real e escala operacional." },
+      { title: "Plataforma de Assinatura Educacional", label: "Happy-Kids", description: "Plataforma educacional orientada por assinatura com UX responsiva, fluxos de aprendizado e engajamento por conteúdo.", outcome: "Experiência educacional construída para usuários recorrentes e entrega escalável de conteúdo." },
     ],
   },
   results: {
@@ -96,3 +94,7 @@ export const pt: typeof en = {
   },
   footer: { description: "Gestão real, código real e pessoas reais construindo arquitetura segura para equipes que precisam de entrega confiável.", menuTitle: "Menu", servicesTitle: "Serviços", contactTitle: "Contato", quickLinks: [{ label: "Início", href: "#introduction" }, { label: "Sobre", href: "#about" }, { label: "Projetos", href: "#projects" }, { label: "Resultados", href: "#results" }, { label: "Serviços", href: "#services" }, { label: "Contato", href: "#contact" }], services: ["Software sob medida", "CTO fracionado", "Integração de APIs", "Automação com IA"], linkedin: "LinkedIn", companyInfo: "Galindo Consulting Group, Inc.", cta: "Agendar chamada", rights: "© 2026 Galindo Consulting Group, Inc. Todos os direitos reservados.", builtWith: "Criado com React, TypeScript e Tailwind CSS" },
 };
+
+
+
+

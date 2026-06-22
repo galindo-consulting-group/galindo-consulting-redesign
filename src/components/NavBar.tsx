@@ -10,7 +10,10 @@ export default function NavBar() {
     { label: t.nav.home, href: "#introduction" },
     { label: t.nav.about, href: "#about" },
     { label: t.nav.projects, href: "#projects" },
+    { label: "Results", href: "#results" },
     { label: t.nav.services, href: "#services" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Gallery", href: "#gallery" },
     { label: t.nav.contact, href: "#contact" },
   ];
 
@@ -48,12 +51,12 @@ export default function NavBar() {
         </a>
 
         <div className="flex min-w-0 flex-1 items-center justify-between gap-3 sm:justify-end">
-          <ul className="flex min-w-0 items-center gap-1 overflow-x-auto sm:gap-2 lg:gap-3">
+          <ul className="flex min-w-0 items-center gap-1 overflow-x-auto sm:gap-2 lg:gap-1">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="flex h-10 items-center justify-center rounded-full border border-transparent px-3 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-400 transition-all duration-200 hover:border-[#00e5ff]/25 hover:bg-[#00e5ff]/10 hover:text-[#00e5ff] focus-visible:border-[#00e5ff]/40 focus-visible:bg-[#00e5ff]/10 focus-visible:text-[#00e5ff] focus-visible:outline-none sm:px-4"
+                  className="flex h-10 items-center justify-center rounded-full border border-transparent px-3 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-400 transition-all duration-200 hover:border-[#00e5ff]/25 hover:bg-[#00e5ff]/10 hover:text-[#00e5ff] focus-visible:border-[#00e5ff]/40 focus-visible:bg-[#00e5ff]/10 focus-visible:text-[#00e5ff] focus-visible:outline-none sm:px-3"
                 >
                   <span className="whitespace-nowrap">{item.label}</span>
                 </a>
@@ -83,3 +86,4 @@ export default function NavBar() {
     </header>
   );
 }
+

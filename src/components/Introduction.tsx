@@ -33,19 +33,6 @@ export default function Introduction() {
               {t.introduction.subtitle}
             </p>
 
-            <div className="gcg-fade-up gcg-fade-delay-3 mt-6 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.04] p-5 shadow-[0_18px_54px_rgba(0,0,0,0.24)] backdrop-blur">
-              <p className="font-mono text-sm font-black uppercase tracking-[0.16em] text-white sm:text-base">
-                {t.introduction.statsLine}
-              </p>
-              <p className="mt-3 text-sm font-bold uppercase tracking-[0.14em] text-[#00e5ff] sm:text-base">
-                {t.introduction.sectorsLine}
-              </p>
-            </div>
-
-            <p className="gcg-fade-up gcg-fade-delay-4 mt-6 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
-              {t.introduction.description}
-            </p>
-
             <div className="gcg-fade-up gcg-fade-delay-4 mt-9 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#contact"
@@ -61,8 +48,13 @@ export default function Introduction() {
               </a>
             </div>
 
-            <div className="gcg-fade-up gcg-fade-delay-4 mt-6 rounded-2xl border border-[#00e5ff]/20 bg-[#00e5ff]/10 px-5 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-[#8beeff] shadow-[0_18px_54px_rgba(0,0,0,0.24)]">
-              {t.introduction.proofStrip}
+            <div className="gcg-fade-up gcg-fade-delay-4 mt-6 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.04] p-5 shadow-[0_18px_54px_rgba(0,0,0,0.24)] backdrop-blur">
+              <p className="font-mono text-sm font-black uppercase tracking-[0.16em] text-white sm:text-base">
+                {t.introduction.statsLine}
+              </p>
+              <p className="mt-3 text-sm font-bold uppercase tracking-[0.14em] text-[#00e5ff] sm:text-base">
+                {t.introduction.sectorsLine}
+              </p>
             </div>
           </div>
 
@@ -118,6 +110,4 @@ export default function Introduction() {
     </>
   );
 }
-
-
 

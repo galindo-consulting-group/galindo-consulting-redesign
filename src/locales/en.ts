@@ -12,10 +12,7 @@
     title: "Galindo Consulting Group Inc.",
     subtitle: "Senior software leadership for SaaS, AI, and product teams.",
     statsLine: "18+ Years Experience 4100+ Projects Delivered",
-    sectorsLine: "SaaS • AI • Healthcare • Education • Enterprise",
-    proofStrip: "18+ Years Experience • Senior-Led Delivery • SaaS, AI, Mobile & Cloud",
-    description:
-      "We help founders and growing companies architect, build, and scale software products with fractional CTO leadership and senior engineering execution.",
+    sectorsLine: "SaaS • AI • Healthcare • Education • Enterprise",    description: "",
     primaryCta: "Book a Discovery Call",
     secondaryCta: "Send a Message",
     metrics: [
@@ -36,16 +33,18 @@
     leadershipTitle: "Executive Leadership",
     leadershipIntro: "Senior operators and technical leaders guide strategy, architecture, delivery, and client outcomes.",
     leaders: [
-      { name: "Ivan", role: "General Manager", description: "Guides operations, delivery alignment, and executive coordination across client engagements." },
-      { name: "Monica", role: "CEO & Partner", description: "Leads business strategy, client relationships, and long-term partnership development." },
-      { name: "Jorge", role: "CEO", description: "Supports executive direction, growth strategy, and organizational leadership." },
-      { name: "Carlos", role: "CEO & Partner", description: "Drives partner strategy, enterprise relationships, and operational decision-making." },
-      { name: "Sergio Pereyra", role: "Engineering Manager & CTO", description: "Leads technical strategy, architecture reviews, engineering governance, and senior delivery execution." },
+      { name: "Jorge Galindo", role: "CEO, Galindo Consulting Group", description: "Provides overall executive leadership, company vision, and global strategic direction across operations and partnerships." },
+      { name: "Carlos Galindo", role: "President & Co-Founder", description: "Drives business expansion, strategic initiatives, and high-level client relationships across global engagements." },
+      { name: "Sergio Pereyra", role: "Global Engineering & Delivery Director", description: "Leads worldwide software delivery, technical architecture, and engineering execution across distributed teams and client systems." },
+      { name: "Monica Lavayen", role: "Chief Operations & Finance Lead", description: "Oversees operations, financial planning, resource management, and organizational efficiency across all company divisions." },
+      { name: "Ivan Szabo", role: "General Manager, E-Commerce & Digital Platforms (Bolivia)", description: "Leads regional e-commerce strategy, platform operations, and digital commerce growth initiatives in Bolivia." },
     ],
     teamIntro: "Product and engineering delivery team",
     members: [
       { name: "Clariana Galindo", role: "Product Strategy & Delivery Lead", description: "Connects product strategy with implementation, shaping SaaS architecture, secure data models, and AI-enabled product workflows." },
       { name: "Ruan Victor", role: "Senior Developer", description: "Builds modern front-end systems, reactive interfaces, and performant cross-platform application experiences." },
+      { name: "Bryan", role: "Senior Developer", description: "Contributes senior development support across scalable application delivery, front-end implementation, and integration workflows." },
+      { name: "Edwin", role: "Senior Developer", description: "Supports senior engineering execution across scalable product builds, integrations, and production-ready application delivery." },
       { name: "Rodrigo Schidmit", role: "Solutions Engineer", description: "Supports responsive feature delivery, reusable interface components, and continuous quality validation." },
       { name: "Hiran Henriques", role: "Solutions Engineer", description: "Works on API consumption, interaction logic, semantic markup, and clean implementation details." },
     ],
@@ -56,11 +55,9 @@
     description:
       "A focused portfolio of SaaS, AI, mobile, gaming, and education products built around business outcomes instead of generic feature delivery.",
     items: [
-      { title: "B2B SaaS & Payments Platform", label: "NextBlock", description: "Built and scaled a business-critical SaaS platform with payments, automation, and operational workflows.", outcome: "Processed $250K+ in transactions within the first 60 days." },
-      { title: "AI Productivity Platform", label: "MentalPilot", description: "AI-powered insights and workflow automation for productivity, planning, and intelligent user guidance.", outcome: "Personalized insights and automation delivered through a modern SaaS architecture." },
-      { title: "Mobile Commerce Platform", label: "Beepr", description: "Production mobile commerce experience with geolocation, scalable infrastructure, and native user flows.", outcome: "Mobile product shipped to production with scalable infrastructure." },
-      { title: "AI Interview Workflow Platform", label: "Interviewiz", description: "AI-driven interview preparation and workflow automation designed for repeatable productivity outcomes.", outcome: "Automated intelligent workflows for user-specific interview preparation." },
-      { title: "Consumer Gaming Platform", label: "GTA Geoguesser", description: "A consumer web platform engineered for shareability, fast loading, and high-volume user activity.", outcome: "Serving 50,000+ monthly users." },
+      { title: "AI Scheduling & Workforce Platform", label: "SaaS", description: "A scheduling and workforce platform designed for booking, operations, automation, and team coordination.", outcome: "Built around SaaS workflows, scheduling logic, and scalable user experiences." },
+      { title: "Mobile Commerce Platform", label: "Beepr", description: "A mobile commerce product with geolocation, transactional flows, and production-ready user experiences.", outcome: "Mobile product experience designed for real-world commerce and operational scale." },
+      { title: "Education Subscription Platform", label: "Happy-Kids", description: "A subscription-oriented education platform with responsive UX, learning flows, and content-driven engagement.", outcome: "Education product experience built for recurring users and scalable content delivery." },
     ],
   },
   results: {
@@ -151,3 +148,8 @@
     builtWith: "Built with React, TypeScript and Tailwind CSS",
   },
 };
+
+
+
+
+
