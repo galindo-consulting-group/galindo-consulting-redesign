@@ -35,12 +35,12 @@ export const pt: typeof en = {
     ],
     teamIntro: "Time de produto e engenharia",
     members: [
-      { name: "Clariana Galindo", role: "Product Strategy & Delivery Lead", description: "Conecta estratégia de produto com implementação, estruturando arquitetura SaaS, modelos de dados seguros e fluxos com IA." },
-      { name: "Ruan Victor", role: "Desenvolvedor Sênior", description: "Constrói sistemas front-end modernos, interfaces reativas e experiências performáticas para múltiplas plataformas." },
-      { name: "Bryan", role: "Desenvolvedor Sênior", description: "Contribui com desenvolvimento sênior em aplicações escaláveis, implementação front-end e fluxos de integração." },
-      { name: "Edwin", role: "Desenvolvedor Sênior", description: "Apoia execução sênior de engenharia em produtos escaláveis, integrações e aplicações prontas para produção." },
-      { name: "Rodrigo Schidmit", role: "Solutions Engineer", description: "Apoia entrega responsiva de funcionalidades, componentes reutilizáveis e validação contínua de qualidade." },
-      { name: "Hiran Henriques", role: "Solutions Engineer", description: "Atua em consumo de APIs, lógica de interação, marcação semântica e detalhes limpos de implementação." },
+      { name: "Clariana Abreu", role: "Product Strategy & Delivery Lead", description: "Conecta estratégia de produto com implementação, estruturando arquitetura SaaS, modelos de dados seguros e fluxos com IA." },
+      { name: "Victor Ruan", role: "Desenvolvedor Sênior", description: "Constrói sistemas front-end modernos, interfaces reativas e experiências performáticas para múltiplas plataformas." },
+      { name: "Bryan Thomas", role: "Desenvolvedor Sênior", description: "Contribui com desenvolvimento sênior em aplicações escaláveis, implementação front-end e fluxos de integração." },
+      { name: "Edwin Guarachi", role: "Desenvolvedor Sênior", description: "Apoia execução sênior de engenharia em produtos escaláveis, integrações e aplicações prontas para produção." },
+      { name: "Rodrigo Schidmit", role: "Desenvolvedor Sênior", description: "Apoia entrega responsiva de funcionalidades, componentes reutilizáveis e validação contínua de qualidade." },
+      { name: "Hiran Henriques", role: "Desenvolvedor Sênior", description: "Atua em consumo de APIs, lógica de interação, marcação semântica e detalhes limpos de implementação." },
     ],
   },
   projects: {
