@@ -2,156 +2,97 @@
 
 export const pt: typeof en = {
   languageName: "Português",
-  nav: {
-    home: "Início",
-    about: "Sobre",
-    projects: "Projetos",
-    services: "Serviços",
-    contact: "Contato",
-  },
+  nav: { home: "Início", about: "Sobre", projects: "Projetos", services: "Serviços", contact: "Contato" },
   introduction: {
     eyebrow: "01 - Estratégia, engenharia, entrega",
     title: "Galindo Consulting Group Inc.",
-    subtitle: "Liderança em software para equipes que precisam avançar sem perder controle.",
-    description:
-      "Desde 2007, a Galindo ajuda empresas a planejar, construir e estabilizar produtos digitais com direção técnica sênior, rotinas transparentes de entrega e engenharia pronta para produção.",
-    primaryCta: "Iniciar projeto",
-    secondaryCta: "Ver competências",
+    subtitle: "Liderança sênior de software para equipes de SaaS, IA e produto.",
+    statsLine: "18+ anos de experiência 4100+ projetos entregues",
+    sectorsLine: "SaaS • IA • Saúde • Educação • Enterprise",
+    proofStrip: "18+ anos de experiência • Entrega liderada por seniores • SaaS, IA, Mobile & Cloud",
+    description: "Ajudamos fundadores e empresas em crescimento a arquitetar, construir e escalar produtos de software com liderança de CTO fracionado e execução sênior de engenharia.",
+    primaryCta: "Agendar chamada de descoberta",
+    secondaryCta: "Enviar mensagem",
     metrics: [
-      { value: "18+", label: "anos guiando entrega de software" },
-      { value: "50k+", label: "horas de produção revisadas" },
-      { value: "100%", label: "foco em execução confiável" },
+      { value: "18+", label: "anos entregando software" },
+      { value: "2007", label: "desde 2007" },
+      { value: "Senior", label: "entrega liderada" },
     ],
-    thesisTitle: "Uma forma mais clara de entregar software sério",
-    thesis:
-      "Conectamos objetivos de negócio com arquitetura, implementação, testes e entrega mensurável. O resultado é um software que pode ser explicado com clareza, mantido com confiança e evoluído sem suposições.",
-    proofPoints: ["Governança técnica", "Estratégia de produto", "Engenharia web e mobile moderna"],
+    thesisTitle: "Produtos liderados por fundadores, projetados da arquitetura à produção.",
+    thesis: "Todo engajamento é liderado por liderança técnica sênior e engenheiros experientes, da arquitetura à entrega. Unimos estratégia de produto, implementação e disciplina operacional em um modelo responsável de entrega.",
+    proofPoints: ["SaaS", "IA", "Sistemas Enterprise", "Mobile", "Cloud"],
   },
   about: {
     eyebrow: "Quem somos",
-    title: "Uma equipe liderada por especialistas em produto, engenharia e execução.",
-    description:
-      "A Galindo combina desenvolvimento prático com governança objetiva. Ajudamos fundadores, operadores e líderes de tecnologia a transformar requisitos complexos em sistemas seguros, escaláveis e prontos para usuários.",
-    teamIntro: "Liderança e equipe de entrega",
+    title: "Liderança sênior e times de entrega para produtos de software sérios.",
+    description: "A Galindo combina orientação executiva, estratégia de produto e engenharia prática para ajudar empresas a sair da ideia até sistemas escaláveis em produção.",
+    leadershipTitle: "Executive Leadership",
+    leadershipIntro: "Operadores seniores e líderes técnicos guiam estratégia, arquitetura, entrega e resultados dos clientes.",
+    leaders: [
+      { name: "Ivan", role: "General Manager", description: "Guia operações, alinhamento de entrega e coordenação executiva nos engajamentos com clientes." },
+      { name: "Monica", role: "CEO & Partner", description: "Lidera estratégia de negócio, relacionamento com clientes e desenvolvimento de parcerias de longo prazo." },
+      { name: "Jorge", role: "CEO", description: "Apoia direção executiva, estratégia de crescimento e liderança organizacional." },
+      { name: "Carlos", role: "CEO & Partner", description: "Conduz estratégia de parceiros, relações enterprise e tomada de decisão operacional." },
+      { name: "Sergio Pereyra", role: "Engineering Manager & CTO", description: "Lidera estratégia técnica, revisões de arquitetura, governança de engenharia e execução sênior." },
+    ],
+    teamIntro: "Time de produto e engenharia",
     members: [
-      {
-        name: "Sergio Pereyra",
-        role: "Gerente de Engenharia & CTO",
-        description:
-          "Lidera governança de portfólio, padrões técnicos, revisões de arquitetura e alinhamento de entrega nas iniciativas dos clientes.",
-      },
-      {
-        name: "Clariana Abreu",
-        role: "Product Manager & Lead Product Engineer",
-        description:
-          "Conecta estratégia de produto com implementação, estruturando arquitetura SaaS, modelos de dados seguros e fluxos com IA.",
-      },
-      {
-        name: "Ruan Victor",
-        role: "Desenvolvedor Sênior",
-        description:
-          "Constrói sistemas front-end modernos, interfaces reativas e experiências performáticas para múltiplas plataformas.",
-      },
-      {
-        name: "Rodrigo Schidmit",
-        role: "Solutions Engineer",
-        description:
-          "Apoia entrega responsiva de funcionalidades, componentes reutilizáveis e validação contínua de qualidade.",
-      },
-      {
-        name: "Hiran Henriques",
-        role: "Solutions Engineer",
-        description:
-          "Atua em consumo de APIs, lógica de interação, marcação semântica e detalhes limpos de implementação.",
-      },
+      { name: "Clariana Galindo", role: "Product Strategy & Delivery Lead", description: "Conecta estratégia de produto com implementação, estruturando arquitetura SaaS, modelos de dados seguros e fluxos com IA." },
+      { name: "Ruan Victor", role: "Desenvolvedor Sênior", description: "Constrói sistemas front-end modernos, interfaces reativas e experiências performáticas para múltiplas plataformas." },
+      { name: "Rodrigo Schidmit", role: "Solutions Engineer", description: "Apoia entrega responsiva de funcionalidades, componentes reutilizáveis e validação contínua de qualidade." },
+      { name: "Hiran Henriques", role: "Solutions Engineer", description: "Atua em consumo de APIs, lógica de interação, marcação semântica e detalhes limpos de implementação." },
     ],
   },
   projects: {
-    eyebrow: "03 - Trabalhos selecionados",
-    title: "Produtos pensados para usuários reais, equipes reais e restrições reais.",
-    description:
-      "Um recorte de plataformas SaaS, migrações mobile e produtos educacionais entregues com tecnologias modernas de web, mobile e cloud.",
+    eyebrow: "03 - Principais provas",
+    title: "Categorias de negócio, resultados mensuráveis e software pronto para produção.",
+    description: "Um portfólio focado em SaaS, IA, mobile, gaming e educação, construído ao redor de resultados de negócio.",
     items: [
-      {
-        title: "Plataforma SaaS de Agendamentos com IA",
-        description:
-          "Produto seguro de agendamento e pagamentos com fluxos multi-tenant, mensagens automatizadas e operações apoiadas por IA.",
-      },
-      {
-        title: "Beepr: Migração Nativa & Geo-Commerce",
-        description:
-          "Experiência de comércio em React Native com geolocalização, Supabase Edge Functions e entrega mobile pronta para produção.",
-      },
-      {
-        title: "Plataforma Educacional Happy-Kids",
-        description:
-          "Produto educacional com UX responsiva, conteúdo de psicologia positiva e arquitetura de serviços em Node.js.",
-      },
+      { title: "Plataforma B2B SaaS & Pagamentos", label: "NextBlock", description: "Construímos e escalamos uma plataforma SaaS crítica com pagamentos, automação e fluxos operacionais.", outcome: "Processou $250K+ em transações nos primeiros 60 dias." },
+      { title: "Plataforma de Produtividade com IA", label: "MentalPilot", description: "Insights com IA e automação de fluxos para produtividade, planejamento e orientação inteligente.", outcome: "Insights personalizados e automação entregues com arquitetura SaaS moderna." },
+      { title: "Plataforma Mobile Commerce", label: "Beepr", description: "Experiência mobile commerce em produção com geolocalização, infraestrutura escalável e fluxos nativos.", outcome: "Produto mobile lançado em produção com infraestrutura escalável." },
+      { title: "Plataforma de Entrevistas com IA", label: "Interviewiz", description: "Preparação de entrevistas e automação inteligente de workflows para resultados repetíveis.", outcome: "Workflows inteligentes automatizados para preparação personalizada." },
+      { title: "Plataforma Consumer Gaming", label: "GTA Geoguesser", description: "Plataforma web consumer projetada para compartilhamento, carregamento rápido e alto volume de usuários.", outcome: "Atendendo 50.000+ usuários mensais." },
+    ],
+  },
+  results: {
+    eyebrow: "04 - Resultados",
+    title: "Resultados selecionados",
+    items: [
+      { title: "$250K+ processados nos primeiros 60 dias", description: "Entregamos infraestrutura SaaS pronta para transações desde o lançamento até a escala inicial." },
+      { title: "50.000+ usuários mensais", description: "Construímos experiências consumer projetadas para performance, compartilhamento e engajamento recorrente." },
+      { title: "Sistemas de produtividade com IA", description: "Entregamos automação inteligente, insights personalizados e arquitetura SaaS moderna." },
+      { title: "Múltiplos apps mobile lançados", description: "Lideramos aplicativos móveis dos requisitos de produto até experiências prontas para produção." },
+      { title: "Produtos de MVP à produção", description: "Ajudamos empresas a desenhar, lançar e evoluir produtos em SaaS, IA, mobile, fintech, educação e saúde." },
+    ],
+  },
+  industries: { eyebrow: "Foco por indústria", title: "Indústrias que atendemos", items: ["SaaS", "Inteligência Artificial", "Saúde", "Educação", "Marketplaces", "Sistemas Enterprise"] },
+  technology: { eyebrow: "Alinhamento técnico", title: "Technology Stack", items: ["React", "Next.js", "React Native", "Node.js", "NestJS", "PostgreSQL", "Supabase", "OpenAI", "Claude", "AWS"] },
+  howWeWork: {
+    eyebrow: "Modelo de entrega",
+    title: "Como trabalhamos",
+    items: [
+      { title: "Descoberta & Planejamento", description: "Clareamos objetivos, escopo, usuários, restrições e riscos técnicos antes de construir." },
+      { title: "Arquitetura & Estratégia", description: "Definimos sistema, dados, integrações, fluxos de IA e roadmap de entrega." },
+      { title: "Desenvolvimento de Produto", description: "Construímos com execução sênior, progresso visível e qualidade pronta para produção." },
+      { title: "Suporte Contínuo", description: "Evoluímos o produto com monitoramento, otimização, roadmap e governança técnica." },
     ],
   },
   services: {
-    eyebrow: "O que fazemos",
-    title: "Competências centrais",
-    intro:
-      "Da descoberta de produto ao suporte em produção, a Galindo traz estrutura para o trabalho que torna software confiável.",
-    ctaTitle: "Pronto para construir algo confiável?",
-    ctaLabel: "Fale com a Galindo",
+    eyebrow: "O que fazemos", title: "Competências centrais", intro: "Da descoberta de produto ao suporte em produção, a Galindo traz estrutura para o trabalho que torna software confiável.", ctaTitle: "Pronto para construir algo confiável?", ctaLabel: "Agendar consultoria",
     items: [
-      {
-        title: "Produto & UI/UX Design",
-        description:
-          "Fluxos de usuário, sistemas de interface, protótipos e experiências acessíveis que tornam produtos complexos mais fáceis de entender.",
-      },
-      {
-        title: "Governança de Projetos",
-        description:
-          "Planejamento de sprints, clareza de backlog, rituais de entrega, visibilidade para stakeholders e controles práticos para manter o ritmo.",
-      },
-      {
-        title: "Desenvolvimento de Software Sob Medida",
-        description:
-          "Implementação com React, TypeScript, APIs, bancos de dados e cloud para MVPs, sistemas internos e produtos corporativos.",
-      },
-      {
-        title: "Integração de APIs & Sistemas",
-        description:
-          "Integrações REST, GraphQL, SaaS e legadas com autenticação, tratamento de erros, limites de uso e observabilidade.",
-      },
-      {
-        title: "Dados, IA & Automação",
-        description:
-          "Dashboards, rastreamento de eventos, fluxos com IA, pipelines RAG e automações que transformam operações em sistemas mensuráveis.",
-      },
-      {
-        title: "SEO, Analytics & Crescimento",
-        description:
-          "SEO técnico, instrumentação analítica, mensuração de campanhas e relatórios que tornam a performance visível.",
-      },
+      { title: "Produto & UI/UX Design", description: "Fluxos de usuário, sistemas de interface, protótipos e experiências acessíveis." },
+      { title: "CTO Fracionado & Governança", description: "Liderança técnica sênior, rituais de entrega, visibilidade e controles práticos." },
+      { title: "Desenvolvimento Sob Medida", description: "React, TypeScript, APIs, bancos de dados e cloud para MVPs e produtos enterprise." },
+      { title: "Integração de APIs & Sistemas", description: "Integrações REST, GraphQL, SaaS e legadas com autenticação e observabilidade." },
+      { title: "Dados, IA & Automação", description: "Dashboards, eventos, fluxos com IA, pipelines RAG e automações mensuráveis." },
+      { title: "SEO, Analytics & Crescimento", description: "SEO técnico, analytics, mensuração de campanhas e relatórios de performance." },
     ],
   },
+  testimonials: { eyebrow: "Prova de clientes", title: "Depoimentos", description: "Depoimentos reais serão adicionados aqui quando os textos aprovados forem fornecidos.", placeholders: ["Depoimento de cliente pendente", "Depoimento de fundador pendente", "Depoimento de stakeholder pendente"] },
+  gallery: { eyebrow: "Visuais de projetos", title: "Gallery", description: "As imagens da galeria serão adicionadas aqui quando as fotos e visuais aprovados forem fornecidos.", placeholders: ["Screenshot de produto", "Momento de entrega", "Visual de projeto", "Release mobile", "Revisão de arquitetura", "Marco de lançamento"] },
   contact: {
-    eyebrow: "Contato",
-    title: "Contrate-nos",
-    description:
-      "Conte o que você está construindo, o que travou ou o que precisa escalar. Responderemos com um próximo passo prático.",
-    helpTitle: "Como podemos ajudar?",
-    helpText:
-      "Apoiamos desenvolvimento sob medida, integração de sistemas, estratégia de produto e operações contínuas de entrega. Escolha um canal e comece a conversa.",
-    emailLabel: "Email",
-    phoneLabel: "Telefone",
-    noteTitle: "Prefere uma primeira mensagem rápida?",
-    noteText:
-      "Envie um resumo curto do desafio. Vamos transformar isso em um plano de ação claro e um caminho de proposta.",
-    form: {
-      name: "Nome completo",
-      namePlaceholder: "Seu nome",
-      email: "E-mail",
-      emailPlaceholder: "voce@exemplo.com",
-      company: "Empresa / Projeto",
-      companyPlaceholder: "Nome da empresa ou projeto",
-      message: "Mensagem",
-      messagePlaceholder: "Explique brevemente sua necessidade.",
-      submit: "Solicitar proposta",
-    },
+    eyebrow: "Contato", title: "Contrate-nos", description: "Agende uma chamada ou envie uma mensagem. Responderemos com um próximo passo prático.", helpTitle: "Como podemos ajudar?", helpText: "Apoiamos desenvolvimento sob medida, integração de sistemas, estratégia de produto e operações contínuas de entrega.", emailLabel: "Email", phoneLabel: "Telefone", calendlyLabel: "Agendar chamada", messageLabel: "Enviar mensagem", noteTitle: "Prefere uma primeira mensagem rápida?", noteText: "Envie um resumo curto do desafio. Vamos transformar isso em um plano claro.", form: { name: "Nome completo", namePlaceholder: "Seu nome", email: "E-mail", emailPlaceholder: "voce@exemplo.com", company: "Empresa / Projeto", companyPlaceholder: "Nome da empresa ou projeto", message: "Mensagem", messagePlaceholder: "Explique brevemente sua necessidade.", submit: "Solicitar proposta" },
   },
+  footer: { description: "Gestão real, código real e pessoas reais construindo arquitetura segura para equipes que precisam de entrega confiável.", menuTitle: "Menu", servicesTitle: "Serviços", contactTitle: "Contato", quickLinks: [{ label: "Início", href: "#introduction" }, { label: "Sobre", href: "#about" }, { label: "Projetos", href: "#projects" }, { label: "Resultados", href: "#results" }, { label: "Serviços", href: "#services" }, { label: "Contato", href: "#contact" }], services: ["Software sob medida", "CTO fracionado", "Integração de APIs", "Automação com IA"], linkedin: "LinkedIn", companyInfo: "Galindo Consulting Group, Inc.", cta: "Agendar chamada", rights: "© 2026 Galindo Consulting Group, Inc. Todos os direitos reservados.", builtWith: "Criado com React, TypeScript e Tailwind CSS" },
 };

@@ -33,6 +33,15 @@ export default function Introduction() {
               {t.introduction.subtitle}
             </p>
 
+            <div className="gcg-fade-up gcg-fade-delay-3 mt-6 max-w-3xl rounded-2xl border border-white/10 bg-white/[0.04] p-5 shadow-[0_18px_54px_rgba(0,0,0,0.24)] backdrop-blur">
+              <p className="font-mono text-sm font-black uppercase tracking-[0.16em] text-white sm:text-base">
+                {t.introduction.statsLine}
+              </p>
+              <p className="mt-3 text-sm font-bold uppercase tracking-[0.14em] text-[#00e5ff] sm:text-base">
+                {t.introduction.sectorsLine}
+              </p>
+            </div>
+
             <p className="gcg-fade-up gcg-fade-delay-4 mt-6 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
               {t.introduction.description}
             </p>
@@ -51,6 +60,10 @@ export default function Introduction() {
                 {t.introduction.secondaryCta}
               </a>
             </div>
+
+            <div className="gcg-fade-up gcg-fade-delay-4 mt-6 rounded-2xl border border-[#00e5ff]/20 bg-[#00e5ff]/10 px-5 py-4 text-sm font-extrabold uppercase tracking-[0.14em] text-[#8beeff] shadow-[0_18px_54px_rgba(0,0,0,0.24)]">
+              {t.introduction.proofStrip}
+            </div>
           </div>
 
           <div className="gcg-fade-up gcg-fade-delay-3 relative">
@@ -62,15 +75,15 @@ export default function Introduction() {
             </div>
 
             <div className="gcg-card absolute -left-3 bottom-10 hidden rounded-2xl px-5 py-4 backdrop-blur lg:block">
-              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-500">Delivery</p>
-              <p className="mt-1 text-2xl font-black text-[#00e5ff]">18+</p>
-              <p className="text-xs text-slate-400">years</p>
+              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-500">Since</p>
+              <p className="mt-1 text-2xl font-black text-[#00e5ff]">2007</p>
+              <p className="text-xs text-slate-400">software delivery</p>
             </div>
 
             <div className="gcg-card absolute -right-3 top-10 hidden rounded-2xl px-5 py-4 backdrop-blur lg:block">
-              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-500">Systems</p>
-              <p className="mt-1 text-2xl font-black text-[#00e5ff]">50k+</p>
-              <p className="text-xs text-slate-400">hours</p>
+              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-500">Delivery</p>
+              <p className="mt-1 text-2xl font-black text-[#00e5ff]">Senior</p>
+              <p className="text-xs text-slate-400">SaaS, AI & enterprise</p>
             </div>
           </div>
         </div>
@@ -105,3 +118,6 @@ export default function Introduction() {
     </>
   );
 }
+
+
+

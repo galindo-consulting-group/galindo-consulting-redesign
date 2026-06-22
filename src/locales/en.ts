@@ -10,147 +10,144 @@
   introduction: {
     eyebrow: "01 - Strategy, engineering, delivery",
     title: "Galindo Consulting Group Inc.",
-    subtitle: "Software leadership for teams that need momentum without losing control.",
+    subtitle: "Senior software leadership for SaaS, AI, and product teams.",
+    statsLine: "18+ Years Experience 4100+ Projects Delivered",
+    sectorsLine: "SaaS • AI • Healthcare • Education • Enterprise",
+    proofStrip: "18+ Years Experience • Senior-Led Delivery • SaaS, AI, Mobile & Cloud",
     description:
-      "Since 2007, Galindo has helped companies plan, build, and stabilize digital products with senior technical direction, transparent delivery routines, and production-minded engineering.",
-    primaryCta: "Start a project",
-    secondaryCta: "See capabilities",
+      "We help founders and growing companies architect, build, and scale software products with fractional CTO leadership and senior engineering execution.",
+    primaryCta: "Book a Discovery Call",
+    secondaryCta: "Send a Message",
     metrics: [
-      { value: "18+", label: "years guiding software delivery" },
-      { value: "50k+", label: "production hours reviewed" },
-      { value: "100%", label: "focused on reliable execution" },
+      { value: "18+", label: "Years Delivering Software" },
+      { value: "2007", label: "Since 2007" },
+      { value: "Senior", label: "Led Delivery" },
     ],
-    thesisTitle: "A calmer way to ship serious software",
+    thesisTitle: "Founder-led products, engineered from architecture to production.",
     thesis:
-      "We connect business goals with architecture, implementation, testing, and measurable delivery. The result is software that can be explained clearly, maintained confidently, and improved without guesswork.",
-    proofPoints: ["Technical governance", "Product strategy", "Modern web and mobile engineering"],
+      "Every engagement is led by senior technical leadership and experienced engineers, from architecture through delivery. We bring product strategy, implementation, and operational discipline into one accountable delivery model.",
+    proofPoints: ["SaaS", "AI", "Enterprise Systems", "Mobile", "Cloud"],
   },
   about: {
     eyebrow: "Who we are",
-    title: "A senior-led team for product, engineering, and execution.",
+    title: "Senior leadership and delivery teams for serious software products.",
     description:
-      "Galindo combines hands-on development with practical governance. We help founders, operators, and technology leaders turn complex requirements into secure, scalable, user-ready systems.",
-    teamIntro: "Leadership and delivery team",
+      "Galindo combines executive guidance, product strategy, and hands-on engineering to help companies move from idea to scalable production systems.",
+    leadershipTitle: "Executive Leadership",
+    leadershipIntro: "Senior operators and technical leaders guide strategy, architecture, delivery, and client outcomes.",
+    leaders: [
+      { name: "Ivan", role: "General Manager", description: "Guides operations, delivery alignment, and executive coordination across client engagements." },
+      { name: "Monica", role: "CEO & Partner", description: "Leads business strategy, client relationships, and long-term partnership development." },
+      { name: "Jorge", role: "CEO", description: "Supports executive direction, growth strategy, and organizational leadership." },
+      { name: "Carlos", role: "CEO & Partner", description: "Drives partner strategy, enterprise relationships, and operational decision-making." },
+      { name: "Sergio Pereyra", role: "Engineering Manager & CTO", description: "Leads technical strategy, architecture reviews, engineering governance, and senior delivery execution." },
+    ],
+    teamIntro: "Product and engineering delivery team",
     members: [
-      {
-        name: "Sergio Pereyra",
-        role: "Engineering Manager & CTO",
-        description:
-          "Leads portfolio governance, technical standards, architecture reviews, and delivery alignment across client initiatives.",
-      },
-      {
-        name: "Clariana Abreu",
-        role: "Product Manager & Lead Product Engineer",
-        description:
-          "Connects product strategy with implementation, shaping SaaS architecture, secure data models, and AI-enabled product workflows.",
-      },
-      {
-        name: "Ruan Victor",
-        role: "Senior Developer",
-        description:
-          "Builds modern front-end systems, reactive interfaces, and performant cross-platform application experiences.",
-      },
-      {
-        name: "Rodrigo Schidmit",
-        role: "Solutions Engineer",
-        description:
-          "Supports responsive feature delivery, reusable interface components, and continuous quality validation.",
-      },
-      {
-        name: "Hiran Henriques",
-        role: "Solutions Engineer",
-        description:
-          "Works on API consumption, interaction logic, semantic markup, and clean implementation details.",
-      },
+      { name: "Clariana Galindo", role: "Product Strategy & Delivery Lead", description: "Connects product strategy with implementation, shaping SaaS architecture, secure data models, and AI-enabled product workflows." },
+      { name: "Ruan Victor", role: "Senior Developer", description: "Builds modern front-end systems, reactive interfaces, and performant cross-platform application experiences." },
+      { name: "Rodrigo Schidmit", role: "Solutions Engineer", description: "Supports responsive feature delivery, reusable interface components, and continuous quality validation." },
+      { name: "Hiran Henriques", role: "Solutions Engineer", description: "Works on API consumption, interaction logic, semantic markup, and clean implementation details." },
     ],
   },
   projects: {
-    eyebrow: "03 - Selected work",
-    title: "Products shaped for real users, teams, and operating constraints.",
+    eyebrow: "03 - Strongest proof points",
+    title: "Business categories, measurable outcomes, and production-ready software.",
     description:
-      "A focused look at SaaS platforms, mobile migrations, and education products delivered with modern web, mobile, and cloud tooling.",
+      "A focused portfolio of SaaS, AI, mobile, gaming, and education products built around business outcomes instead of generic feature delivery.",
     items: [
-      {
-        title: "AI-Augmented SaaS Booking Platform",
-        description:
-          "A secure scheduling and payment product with multi-tenant workflows, automated messaging, and AI-assisted customer operations.",
-      },
-      {
-        title: "Beepr: Native Migration & Geo-Commerce",
-        description:
-          "A React Native commerce experience with geolocation, Supabase Edge Functions, and production-ready mobile delivery.",
-      },
-      {
-        title: "Happy-Kids Education Platform",
-        description:
-          "An education platform combining responsive UX, positive psychology content, and Node.js service architecture.",
-      },
+      { title: "B2B SaaS & Payments Platform", label: "NextBlock", description: "Built and scaled a business-critical SaaS platform with payments, automation, and operational workflows.", outcome: "Processed $250K+ in transactions within the first 60 days." },
+      { title: "AI Productivity Platform", label: "MentalPilot", description: "AI-powered insights and workflow automation for productivity, planning, and intelligent user guidance.", outcome: "Personalized insights and automation delivered through a modern SaaS architecture." },
+      { title: "Mobile Commerce Platform", label: "Beepr", description: "Production mobile commerce experience with geolocation, scalable infrastructure, and native user flows.", outcome: "Mobile product shipped to production with scalable infrastructure." },
+      { title: "AI Interview Workflow Platform", label: "Interviewiz", description: "AI-driven interview preparation and workflow automation designed for repeatable productivity outcomes.", outcome: "Automated intelligent workflows for user-specific interview preparation." },
+      { title: "Consumer Gaming Platform", label: "GTA Geoguesser", description: "A consumer web platform engineered for shareability, fast loading, and high-volume user activity.", outcome: "Serving 50,000+ monthly users." },
+    ],
+  },
+  results: {
+    eyebrow: "04 - Outcomes",
+    title: "Selected Results",
+    items: [
+      { title: "$250K+ processed in the first 60 days", description: "Delivered transaction-ready SaaS infrastructure for a B2B platform from launch through early scale." },
+      { title: "50,000+ monthly users", description: "Built consumer product experiences designed for performance, sharing, and repeat engagement." },
+      { title: "AI-powered productivity systems", description: "Delivered intelligent workflow automation, personalized insights, and modern SaaS product architecture." },
+      { title: "Multiple mobile apps shipped", description: "Led mobile applications from product requirements to production-ready user experiences." },
+      { title: "Founder-led products from MVP to production", description: "Helped companies design, launch, and evolve products across SaaS, AI, mobile, fintech, education, and healthcare." },
+    ],
+  },
+  industries: {
+    eyebrow: "Industry focus",
+    title: "Industries We Serve",
+    items: ["SaaS", "Artificial Intelligence", "Healthcare", "Education", "Marketplaces", "Enterprise Systems"],
+  },
+  technology: {
+    eyebrow: "Technology alignment",
+    title: "Technology Stack",
+    items: ["React", "Next.js", "React Native", "Node.js", "NestJS", "PostgreSQL", "Supabase", "OpenAI", "Claude", "AWS"],
+  },
+  howWeWork: {
+    eyebrow: "Delivery model",
+    title: "How We Work",
+    items: [
+      { title: "Discovery & Planning", description: "Clarify business goals, product scope, users, constraints, and technical risks before building." },
+      { title: "Architecture & Strategy", description: "Define the system shape, data model, integrations, AI workflows, and delivery roadmap." },
+      { title: "Product Development", description: "Build with senior engineering execution, visible progress, and production-minded quality." },
+      { title: "Ongoing Support", description: "Evolve the product with monitoring, optimization, roadmap support, and technical governance." },
     ],
   },
   services: {
     eyebrow: "What we do",
     title: "Core capabilities",
-    intro:
-      "From product discovery to production support, Galindo brings structure to the work that makes software dependable.",
+    intro: "From product discovery to production support, Galindo brings structure to the work that makes software dependable.",
     ctaTitle: "Ready to build something reliable?",
-    ctaLabel: "Talk to Galindo",
+    ctaLabel: "Schedule a Consultation",
     items: [
-      {
-        title: "Product & UI/UX Design",
-        description:
-          "User flows, interface systems, prototypes, and accessibility-minded experiences that make complex products easier to understand.",
-      },
-      {
-        title: "Project Governance",
-        description:
-          "Sprint planning, backlog clarity, delivery rituals, stakeholder visibility, and practical controls that keep teams moving.",
-      },
-      {
-        title: "Custom Software Development",
-        description:
-          "React, TypeScript, API, database, and cloud implementation for MVPs, internal systems, and enterprise-grade products.",
-      },
-      {
-        title: "API & Systems Integration",
-        description:
-          "Reliable REST, GraphQL, SaaS, and legacy integrations with authentication, error handling, rate limits, and observability.",
-      },
-      {
-        title: "Data, AI & Automation",
-        description:
-          "Dashboards, event tracking, AI-assisted workflows, RAG pipelines, and automations that turn operations into measurable systems.",
-      },
-      {
-        title: "SEO, Analytics & Growth Support",
-        description:
-          "Technical SEO, analytics instrumentation, campaign measurement, and reporting loops that make performance visible.",
-      },
+      { title: "Product & UI/UX Design", description: "User flows, interface systems, prototypes, and accessibility-minded experiences that make complex products easier to understand." },
+      { title: "Fractional CTO & Project Governance", description: "Senior technical leadership, delivery rituals, stakeholder visibility, and practical controls that keep teams moving." },
+      { title: "Custom Software Development", description: "React, TypeScript, API, database, and cloud implementation for MVPs, internal systems, and enterprise-grade products." },
+      { title: "API & Systems Integration", description: "Reliable REST, GraphQL, SaaS, and legacy integrations with authentication, error handling, rate limits, and observability." },
+      { title: "Data, AI & Automation", description: "Dashboards, event tracking, AI-assisted workflows, RAG pipelines, and automations that turn operations into measurable systems." },
+      { title: "SEO, Analytics & Growth Support", description: "Technical SEO, analytics instrumentation, campaign measurement, and reporting loops that make performance visible." },
     ],
+  },
+  testimonials: {
+    eyebrow: "Client proof",
+    title: "Testimonials",
+    description: "Real client testimonials will be added here once the approved statements are provided.",
+    placeholders: ["Client testimonial pending", "Founder testimonial pending", "Product stakeholder testimonial pending"],
+  },
+  gallery: {
+    eyebrow: "Project visuals",
+    title: "Gallery",
+    description: "Gallery images will be added here once the approved project photos and visuals are provided.",
+    placeholders: ["Product screenshot", "Team delivery moment", "Client project visual", "Mobile release", "Architecture review", "Launch milestone"],
   },
   contact: {
     eyebrow: "Contact",
     title: "Hire us",
-    description:
-      "Tell us what you are building, what is stuck, or what needs to scale. We will respond with a practical next step.",
+    description: "Book a call or send a message. We will respond with a practical next step for your product, architecture, or delivery challenge.",
     helpTitle: "How can we help?",
-    helpText:
-      "We support bespoke development, systems integration, product strategy, and ongoing delivery operations. Choose a channel and start the conversation.",
+    helpText: "We support bespoke development, systems integration, product strategy, and ongoing delivery operations. Choose a channel and start the conversation.",
     emailLabel: "Email",
     phoneLabel: "Telephone",
+    calendlyLabel: "Book a Call",
+    messageLabel: "Send a Message",
     noteTitle: "Prefer a quick first message?",
-    noteText:
-      "Send a short summary of the challenge. We will turn it into a clear action plan and proposal path.",
-    form: {
-      name: "Full name",
-      namePlaceholder: "Your name",
-      email: "E-mail",
-      emailPlaceholder: "you@example.com",
-      company: "Company / Project",
-      companyPlaceholder: "Company or project name",
-      message: "Message",
-      messagePlaceholder: "Briefly explain your needs.",
-      submit: "Request proposal",
-    },
+    noteText: "Send a short summary of the challenge. We will turn it into a clear action plan and proposal path.",
+    form: { name: "Full name", namePlaceholder: "Your name", email: "E-mail", emailPlaceholder: "you@example.com", company: "Company / Project", companyPlaceholder: "Company or project name", message: "Message", messagePlaceholder: "Briefly explain your needs.", submit: "Request proposal" },
+  },
+  footer: {
+    description: "Real management, real coding, and real people building secure software architecture for teams that need reliable delivery.",
+    menuTitle: "Menu",
+    servicesTitle: "Services",
+    contactTitle: "Contact",
+    quickLinks: [
+      { label: "Home", href: "#introduction" }, { label: "About Us", href: "#about" }, { label: "Projects", href: "#projects" }, { label: "Results", href: "#results" }, { label: "Services", href: "#services" }, { label: "Contact", href: "#contact" },
+    ],
+    services: ["Custom Software", "Fractional CTO", "API Integration", "AI Automation"],
+    linkedin: "LinkedIn",
+    companyInfo: "Galindo Consulting Group, Inc.",
+    cta: "Book a Discovery Call",
+    rights: "© 2026 Galindo Consulting Group, Inc. All rights reserved.",
+    builtWith: "Built with React, TypeScript and Tailwind CSS",
   },
 };
-

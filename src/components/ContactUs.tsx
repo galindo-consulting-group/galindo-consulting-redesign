@@ -37,6 +37,15 @@ export default function ContactUs() {
                   <p className="mt-3 text-base font-bold text-white">+1 703-881-7822</p>
                 </a>
               </div>
+
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                <a href="#contact" className="inline-flex h-12 items-center justify-center rounded-full bg-[#00e5ff] px-5 text-sm font-extrabold uppercase tracking-[0.1em] text-[#07080c] transition hover:bg-[#33ecff]">
+                  {t.contact.calendlyLabel}
+                </a>
+                <a href="mailto:president@galindoinc.com" className="inline-flex h-12 items-center justify-center rounded-full border border-white/10 px-5 text-sm font-bold uppercase tracking-[0.1em] text-white transition hover:border-[#00e5ff] hover:text-[#00e5ff]">
+                  {t.contact.messageLabel}
+                </a>
+              </div>
             </div>
 
             <div className="gcg-card rounded-[18px] p-7 sm:p-8">
@@ -108,3 +117,4 @@ export default function ContactUs() {
     </section>
   );
 }
+

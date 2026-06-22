@@ -1,52 +1,44 @@
-const quickLinks = [
-  { label: "Home", href: "#introduction" },
-  { label: "About Us", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
-];
-
-const footerServices = [
-  "Custom Software",
-  "Business Intelligence",
-  "API Integration",
-  "UI/UX Design",
-];
+﻿import { useLanguage } from "../context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
-    <footer className="bg-slate-950 px-5 py-12 text-slate-300 sm:px-6 sm:py-14">
-      <div className="mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 gap-10 border-b border-slate-800 pb-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+    <footer className="relative overflow-hidden border-t border-white/10 bg-[#07080c] px-5 py-14 text-slate-300 sm:px-6 lg:px-10">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(0,229,255,0.12),transparent_24rem),radial-gradient(circle_at_82%_18%,rgba(124,58,237,0.1),transparent_22rem)]" />
+      <div className="relative z-10 mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-10 border-b border-white/10 pb-10 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.8fr_0.95fr_1fr]">
           <div>
             <a
               href="#introduction"
               className="inline-flex flex-col leading-none text-white"
               aria-label="Galindo Consulting Group home"
             >
-              <span className="font-serif text-4xl font-bold italic tracking-tight text-indigo-300  transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
+              <span className="font-serif text-5xl font-bold italic tracking-tight text-white transition-colors duration-300 hover:text-[#00e5ff]">
                 Galindo
               </span>
-              <span className="mt-1 text-xs font-bold tracking-tight text-slate-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-x1">
+              <span className="mt-2 text-xs font-bold tracking-tight text-slate-500">
                 Consulting Group, Inc.
               </span>
             </a>
-            <p className="mt-5 max-w-sm text-sm leading-6 text-slate-400">
-              Real management, real coding, and real people building secure
-              software architecture for teams that need reliable delivery.
+            <p className="mt-6 max-w-sm text-sm leading-7 text-slate-400">
+              {t.footer.description}
+            </p>
+            <p className="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
+              {t.footer.companyInfo}
             </p>
           </div>
 
           <div>
-            <h2 className="text-sm font-bold uppercase tracking-[0.24em] text-white">
-              Menu
+            <h2 className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">
+              {t.footer.menuTitle}
             </h2>
-            <nav className="mt-5 flex flex-col gap-3">
-              {quickLinks.map((link) => (
+            <nav className="mt-6 flex flex-col gap-3">
+              {t.footer.quickLinks.map((link) => (
                 <a
-                  key={link.label}
+                  key={link.href}
                   href={link.href}
-                  className="text-sm text-slate-400 transition-colors duration-200 hover:text-indigo-300"
+                  className="text-sm font-semibold text-slate-400 transition-colors duration-200 hover:text-[#00e5ff]"
                 >
                   {link.label}
                 </a>
@@ -55,12 +47,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="text-sm font-bold uppercase tracking-[0.24em] text-white">
-              Services
+            <h2 className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">
+              {t.footer.servicesTitle}
             </h2>
-            <ul className="mt-5 flex flex-col gap-3">
-              {footerServices.map((service) => (
-                <li key={service} className="text-sm text-slate-400">
+            <ul className="mt-6 flex flex-col gap-3">
+              {t.footer.services.map((service) => (
+                <li key={service} className="text-sm font-semibold text-slate-400">
                   {service}
                 </li>
               ))}
@@ -68,31 +60,44 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="text-sm font-bold uppercase tracking-[0.24em] text-white">
-              Contact
+            <h2 className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">
+              {t.footer.contactTitle}
             </h2>
-            <div className="mt-5 space-y-3 text-sm text-slate-400">
-              <p className="break-words">president@galindoinc.com</p>
-              <p>+1 703-881-7822</p>
-              <a
-                href="#contact"
-                className="inline-flex rounded-full border border-indigo-400/40 px-5 py-2 font-semibold text-indigo-200 transition-colors duration-200 hover:border-indigo-300 hover:bg-indigo-500/10"
-              >
-                Solicitar proposta
+            <div className="mt-6 space-y-4 text-sm text-slate-400">
+              <a className="block break-words font-semibold transition-colors hover:text-[#00e5ff]" href="mailto:president@galindoinc.com">
+                president@galindoinc.com
               </a>
+              <a className="block font-semibold transition-colors hover:text-[#00e5ff]" href="tel:+17038817822">
+                +1 703-881-7822
+              </a>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="#contact"
+                  className="inline-flex rounded-full border border-[#00e5ff]/35 bg-[#00e5ff]/10 px-5 py-2.5 text-sm font-bold text-[#8beeff] transition-all duration-200 hover:-translate-y-0.5 hover:border-[#00e5ff] hover:bg-[#00e5ff] hover:text-[#07080c]"
+                >
+                  {t.footer.cta}
+                </a>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex rounded-full border border-white/10 px-5 py-2.5 text-sm font-bold text-slate-300 transition-all duration-200 hover:-translate-y-0.5 hover:border-[#00e5ff] hover:text-[#00e5ff]"
+                >
+                  {t.footer.linkedin}
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col gap-3 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © 2026 Galindo Consulting Group, Inc. All rights reserved.
-          </p>
+          <p>{t.footer.rights}</p>
           <p className="font-mono uppercase tracking-[0.12em] sm:tracking-[0.18em]">
-            Built with React, TypeScript and Tailwind CSS
+            {t.footer.builtWith}
           </p>
         </div>
       </div>
     </footer>
   );
 }
+
