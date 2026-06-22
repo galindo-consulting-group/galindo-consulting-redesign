@@ -7,7 +7,7 @@ import ivanImg from "../assets/ivan-general-manager.jpeg";
 import jorgeImg from "../assets/jorge-ceo.jpeg";
 import monicaImg from "../assets/Monica-ceo-partner.jpeg";
 import rodrigoImg from "../assets/rodrigo.jpeg";
-import sergioImg from "../assets/sergio.jpeg";
+import sergioImg from "../assets/sergio1.jfif";
 import ruanImg from "../assets/victor-ruan.jfif";
 import { useLanguage } from "../context/LanguageContext";
 

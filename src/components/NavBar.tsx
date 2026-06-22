@@ -1,6 +1,4 @@
 ﻿import { useEffect, useState } from "react";
-// 1. Importação da logo (ajuste a extensão se for .svg ou .png)
-import logoImg from "../assets/galindo-logo.jpeg";
 import { useLanguage } from "../context/LanguageContext";
 import { languageOptions } from "../locales";
 
@@ -39,18 +37,17 @@ export default function NavBar() {
       }`}
     >
       <nav className="mx-auto mt-3 flex max-w-7xl flex-col gap-3 rounded-none border border-white/10 bg-[#07080c]/86 px-4 py-3 shadow-[0_18px_60px_rgba(0,0,0,0.38)] backdrop-blur-2xl sm:flex-row sm:items-center sm:justify-between sm:rounded-full sm:px-5 lg:px-6">
-        
-        {/* 2. Link da Home estruturado para a Imagem */}
         <a
           href="#introduction"
-          className="group flex shrink-0 items-center leading-none"
+          className="group flex shrink-0 flex-col leading-none"
           aria-label="Galindo Consulting Group home"
         >
-          <img 
-            src={logoImg} 
-            alt="Galindo Consulting Group" 
-            className="h-8 w-auto object-contain transition duration-300 group-hover:opacity-85" 
-          />
+          <span className="font-serif text-3xl font-bold italic tracking-tight text-white transition-colors group-hover:text-[#00e5ff]">
+            Galindo
+          </span>
+          <span className="mt-1 text-[11px] font-bold tracking-tight text-slate-500 transition-colors group-hover:text-slate-300">
+            Consulting Group, Inc.
+          </span>
         </a>
 
         <div className="flex min-w-0 flex-1 items-center justify-between gap-3 sm:justify-end">
@@ -89,3 +86,4 @@ export default function NavBar() {
     </header>
   );
 }
+
