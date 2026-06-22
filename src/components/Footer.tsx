@@ -1,4 +1,5 @@
 ﻿import { useLanguage } from "../context/LanguageContext";
+import galindoIcon from "../assets/galindo-icon.jpeg";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -11,14 +12,11 @@ export default function Footer() {
           <div>
             <a
               href="#introduction"
-              className="inline-flex flex-col leading-none text-white"
+              className="inline-flex items-center"
               aria-label="Galindo Consulting Group home"
             >
-              <span className="font-serif text-5xl font-bold italic tracking-tight text-white transition-colors duration-300 hover:text-[#00e5ff]">
-                Galindo
-              </span>
-              <span className="mt-2 text-xs font-bold tracking-tight text-slate-500">
-                Consulting Group, Inc.
+              <span className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl border border-[#00e5ff]/25 bg-white p-2 shadow-[0_18px_54px_rgba(0,229,255,0.12)] transition hover:border-[#00e5ff]/70">
+                <img src={galindoIcon} alt="Galindo Consulting Group" className="h-full w-full object-contain" />
               </span>
             </a>
             <p className="mt-6 max-w-sm text-sm leading-7 text-slate-400">
@@ -100,4 +98,7 @@ export default function Footer() {
     </footer>
   );
 }
+
+
+
 

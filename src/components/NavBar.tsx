@@ -1,6 +1,7 @@
 ﻿import { useEffect, useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { languageOptions } from "../locales";
+import galindoIcon from "../assets/galindo-icon.jpeg";
 
 export default function NavBar() {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,14 +40,11 @@ export default function NavBar() {
       <nav className="mx-auto mt-3 flex max-w-7xl flex-col gap-3 rounded-none border border-white/10 bg-[#07080c]/86 px-4 py-3 shadow-[0_18px_60px_rgba(0,0,0,0.38)] backdrop-blur-2xl sm:flex-row sm:items-center sm:justify-between sm:rounded-full sm:px-5 lg:px-6">
         <a
           href="#introduction"
-          className="group flex shrink-0 flex-col leading-none"
+          className="group flex shrink-0 items-center"
           aria-label="Galindo Consulting Group home"
         >
-          <span className="font-serif text-3xl font-bold italic tracking-tight text-white transition-colors group-hover:text-[#00e5ff]">
-            Galindo
-          </span>
-          <span className="mt-1 text-[11px] font-bold tracking-tight text-slate-500 transition-colors group-hover:text-slate-300">
-            Consulting Group, Inc.
+          <span className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-full border border-[#00e5ff]/25 bg-white p-1.5 shadow-[0_10px_30px_rgba(0,229,255,0.12)] transition group-hover:border-[#00e5ff]/70">
+            <img src={galindoIcon} alt="Galindo Consulting Group" className="h-full w-full rounded-full object-contain" />
           </span>
         </a>
 
@@ -86,4 +84,7 @@ export default function NavBar() {
     </header>
   );
 }
+
+
+
 
