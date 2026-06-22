@@ -1,10 +1,17 @@
-﻿import clarianaPasseioImg from "../assets/clariana-passeio.webp";
+﻿import apresentationImg from "../assets/apresentation.jpeg";
+import clarianaPasseioImg from "../assets/clariana-passeio.webp";
 import conferenceImg from "../assets/conference.jpeg";
 import globalImg from "../assets/global.jpeg";
 import meetingTableImg from "../assets/meeting-table.jpeg";
 import { useLanguage } from "../context/LanguageContext";
 
-const galleryItems = [globalImg, conferenceImg, meetingTableImg, clarianaPasseioImg];
+const galleryItems = [
+  globalImg,
+  conferenceImg,
+  meetingTableImg,
+  clarianaPasseioImg,
+  apresentationImg
+];
 
 export default function Gallery() {
   const { t } = useLanguage();
@@ -18,7 +25,8 @@ export default function Gallery() {
           <p className="mt-4 text-lg leading-8 text-slate-400">{t.gallery.description}</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Atualizado para grid-cols-5 em telas grandes para acomodar a quinta foto */}
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {galleryItems.map((image, index) => (
             <figure key={image} className="gcg-card group relative aspect-[4/3] overflow-hidden rounded-[18px]">
               <img src={image} alt={`Gallery image ${index + 1}`} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
