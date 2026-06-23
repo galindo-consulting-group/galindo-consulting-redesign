@@ -17,11 +17,11 @@ export default function Gallery() {
   const { t } = useLanguage();
 
   return (
-    <section id="gallery" className="reveal bg-[#0f1117] px-5 py-24 text-white sm:px-6 lg:px-10">
+    <section id="gallery" className="reveal bg-transparent px-5 py-24 text-[#06315f] sm:px-6 lg:px-10">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 max-w-4xl">
           <span className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">{t.gallery.eyebrow}</span>
-          <h2 className="mt-5 font-serif text-4xl font-normal leading-tight tracking-tight text-white sm:text-5xl">{t.gallery.title}</h2>
+          <h2 className="mt-5 font-serif text-4xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.gallery.title}</h2>
           
         </div>
 
@@ -38,3 +38,5 @@ export default function Gallery() {
     </section>
   );
 }
+
+

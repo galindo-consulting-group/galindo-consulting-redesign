@@ -89,20 +89,20 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="reveal bg-[#07080c] px-5 py-24 text-white sm:px-6 lg:px-10">
+    <section id="testimonials" className="reveal bg-transparent px-5 py-24 text-[#06315f] sm:px-6 lg:px-10">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-4xl">
             <span className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">{t.testimonials.eyebrow}</span>
-            <h2 className="mt-5 font-serif text-4xl font-normal leading-tight tracking-tight text-white sm:text-5xl">{t.testimonials.title}</h2>
-            <p className="mt-4 text-lg leading-8 text-slate-400">Completed jobs (3845)</p>
+            <h2 className="mt-5 font-serif text-4xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.testimonials.title}</h2>
+            <p className="mt-4 text-lg leading-8 text-[#1f5f99]">Completed jobs (3845)</p>
           </div>
 
           <div className="flex gap-3">
             <button
               type="button"
               onClick={previous}
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 text-2xl font-black text-slate-200 transition hover:border-[#00e5ff] hover:bg-[#00e5ff]/10 hover:text-[#00e5ff]"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-[#0080ff]/15 text-2xl font-black text-slate-200 transition hover:border-[#00e5ff] hover:bg-[#00e5ff]/10 hover:text-[#00e5ff]"
               aria-label="Previous testimonial"
             >
               ←
@@ -120,12 +120,12 @@ export default function Testimonials() {
 
         <div className="gcg-card overflow-hidden rounded-[18px]">
           <div className="grid gap-0 lg:grid-cols-[0.75fr_1.25fr]">
-            <div className="border-b border-white/10 p-6 lg:border-b-0 lg:border-r lg:p-8">
+            <div className="border-b border-[#0080ff]/15 p-6 lg:border-b-0 lg:border-r lg:p-8">
               <p className="font-mono text-sm font-bold uppercase tracking-[0.18em] text-[#00e5ff]">
                 {String(activeIndex + 1).padStart(2, "0")} / {String(completedJobs.length).padStart(2, "0")}
               </p>
-              <h3 className="mt-6 font-serif text-3xl font-normal leading-tight text-white">{activeJob.title}</h3>
-              <p className="mt-4 text-sm font-semibold text-slate-500">{activeJob.dates}</p>
+              <h3 className="mt-6 font-serif text-3xl font-normal leading-tight text-[#06315f]">{activeJob.title}</h3>
+              <p className="mt-4 text-sm font-semibold text-[#4478aa]">{activeJob.dates}</p>
 
               {activeJob.rating ? (
                 <div className="mt-6 inline-flex items-center gap-3 rounded-full border border-[#00e5ff]/25 bg-[#00e5ff]/10 px-4 py-2 text-sm font-black text-[#8beeff]">
@@ -141,24 +141,24 @@ export default function Testimonials() {
                   “{activeJob.quote}”
                 </blockquote>
               ) : (
-                <p className="text-xl leading-9 text-slate-400">Completed project with verified payment history.</p>
+                <p className="text-xl leading-9 text-[#1f5f99]">Completed project with verified payment history.</p>
               )}
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Amount</p>
-                  <p className="mt-2 text-xl font-black text-white">{activeJob.amount}</p>
+                <div className="rounded-2xl border border-[#0080ff]/15 bg-white/[0.04] p-4">
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#4478aa]">Amount</p>
+                  <p className="mt-2 text-xl font-black text-[#06315f]">{activeJob.amount}</p>
                 </div>
                 {activeJob.rate ? (
-                  <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Rate</p>
-                    <p className="mt-2 text-xl font-black text-white">{activeJob.rate}</p>
+                  <div className="rounded-2xl border border-[#0080ff]/15 bg-white/[0.04] p-4">
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#4478aa]">Rate</p>
+                    <p className="mt-2 text-xl font-black text-[#06315f]">{activeJob.rate}</p>
                   </div>
                 ) : null}
                 {activeJob.hours ? (
-                  <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Hours</p>
-                    <p className="mt-2 text-xl font-black text-white">{activeJob.hours}</p>
+                  <div className="rounded-2xl border border-[#0080ff]/15 bg-white/[0.04] p-4">
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#4478aa]">Hours</p>
+                    <p className="mt-2 text-xl font-black text-[#06315f]">{activeJob.hours}</p>
                   </div>
                 ) : null}
               </div>
@@ -181,4 +181,7 @@ export default function Testimonials() {
     </section>
   );
 }
+
+
+
 

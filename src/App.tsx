@@ -17,7 +17,7 @@ function App() {
   useRevealOnScroll();
 
   return (
-    <main className="min-h-screen bg-[#07080c] text-slate-100 antialiased">
+    <main className="min-h-screen text-[#06315f] antialiased">
       <NavBar />
       <Introduction />
       <AboutUs />
@@ -36,3 +36,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
