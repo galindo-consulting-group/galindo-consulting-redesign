@@ -19,7 +19,7 @@ export const es: typeof en = {
     ],
     teamIntro: "Equipo de producto e ingeniería",
     members: [
-      { name: "Clariana Abreu", role: "Product Strategy & Delivery Lead", description: "Conecta estrategia de producto con implementación, dando forma a arquitectura SaaS, modelos de datos seguros y flujos con IA." },
+      { name: "Clariana Abreu", role: "Lead Full-Stack Engineer", description: "Conecta estrategia de producto con implementación, dando forma a arquitectura SaaS, modelos de datos seguros y flujos con IA." },
       { name: "Victor Ruan", role: "Desarrollador Senior", description: "Construye sistemas front-end modernos, interfaces reactivas y experiencias de alto rendimiento." },
       { name: "Bryan Thomas", role: "Desarrollador Senior", description: "Contribuye con desarrollo senior en aplicaciones escalables, implementación front-end y flujos de integración." },
       { name: "Edwin Guarachi", role: "Desarrollador Senior", description: "Apoya ejecución senior de ingeniería en productos escalables, integraciones y aplicaciones listas para producción." },

@@ -41,7 +41,7 @@
     ],
     teamIntro: "Product and engineering delivery team",
     members: [
-      { name: "Clariana Abreu", role: "Product Strategy & Delivery Lead", description: "Connects product strategy with implementation, shaping SaaS architecture, secure data models, and AI-enabled product workflows." },
+      { name: "Clariana Abreu", role: "Lead Full-Stack Engineer", description: "Connects product strategy with implementation, shaping SaaS architecture, secure data models, and AI-enabled product workflows." },
       { name: "Victor Ruan", role: "Senior Developer", description: "Builds modern front-end systems, reactive interfaces, and performant cross-platform application experiences." },
       { name: "Bryan Thomas", role: "Senior Developer", description: "Contributes senior development support across scalable application delivery, front-end implementation, and integration workflows." },
       { name: "Edwin Guarachi", role: "Senior Developer", description: "Supports senior engineering execution across scalable product builds, integrations, and production-ready application delivery." },
