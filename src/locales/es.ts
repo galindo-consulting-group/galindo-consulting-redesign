@@ -13,7 +13,7 @@ export const es: typeof en = {
     leaders: [
       { name: "Jorge Galindo", role: "CEO, Galindo Consulting Group", description: "Proporciona liderazgo ejecutivo general, visión de compañía y dirección estratégica global en operaciones y alianzas." },
       { name: "Carlos Galindo", role: "President & Co-Founder", description: "Impulsa expansión de negocio, iniciativas estratégicas y relaciones de alto nivel con clientes globales." },
-      { name: "Sergio Pereyra", role: "Global Engineering & Delivery Director", description: "Lidera entrega global de software, arquitectura técnica y ejecución de ingeniería en equipos distribuidos y sistemas de clientes." },
+      { name: "Sergio Pereyra", role: "Projet Manager & Delivery Director", description: "Lidera entrega global de software, arquitectura técnica y ejecución de ingeniería en equipos distribuidos y sistemas de clientes." },
       { name: "Monica Lavayen", role: "Chief Operations & Finance Lead", description: "Supervisa operaciones, planificación financiera, gestión de recursos y eficiencia organizacional en todas las divisiones." },
       { name: "Ivan Szabo", role: "General Manager, E-Commerce & Digital Platforms (Bolivia)", description: "Lidera estrategia regional de e-commerce, operaciones de plataforma y crecimiento de comercio digital en Bolivia." },
     ],
@@ -65,6 +65,7 @@ export const es: typeof en = {
   contact: { eyebrow: "Contacto", title: "Contrátanos", description: "Agenda una llamada o envía un mensaje. Responderemos con un próximo paso práctico.", helpTitle: "¿Cómo podemos ayudar?", helpText: "Apoyamos desarrollo a medida, integración de sistemas, estrategia de producto y operaciones continuas de entrega.", emailLabel: "Email", phoneLabel: "Teléfono", calendlyLabel: "Agendar llamada", messageLabel: "Enviar mensaje", noteTitle: "¿Prefieres un primer mensaje rápido?", noteText: "Envía un resumen corto del desafío. Lo convertiremos en un plan claro.", form: { name: "Nombre completo", namePlaceholder: "Tu nombre", email: "E-mail", emailPlaceholder: "tu@ejemplo.com", company: "Empresa / Proyecto", companyPlaceholder: "Nombre de la empresa o proyecto", message: "Mensaje", messagePlaceholder: "Explica brevemente tu necesidad.", submit: "Solicitar propuesta" } },
   footer: { description: "Gestión real, código real y personas reales construyendo arquitectura segura para equipos que necesitan entregas confiables.", menuTitle: "Menú", servicesTitle: "Servicios", contactTitle: "Contacto", quickLinks: [{ label: "Inicio", href: "#introduction" }, { label: "Nosotros", href: "#about" }, { label: "Proyectos", href: "#projects" }, { label: "Resultados", href: "#results" }, { label: "Servicios", href: "#services" }, { label: "Contacto", href: "#contact" }], services: ["Software a medida", "CTO fraccional", "Integración de APIs", "Automatización con IA"], linkedin: "LinkedIn", companyInfo: "Galindo Consulting Group, Inc.", cta: "Agendar llamada", rights: "© 2026 Galindo Consulting Group, Inc. Todos los derechos reservados.", builtWith: "Creado con React, TypeScript y Tailwind CSS" },
 };
+
 
 
 

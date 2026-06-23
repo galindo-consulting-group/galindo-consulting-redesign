@@ -25,9 +25,17 @@ export default function Introduction() {
               {t.introduction.eyebrow}
             </span>
 
-            <h1 className="gcg-fade-up gcg-fade-delay-2 mt-7 max-w-5xl font-serif text-5xl font-normal leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              {t.introduction.title}
-            </h1>
+            <div className="gcg-fade-up gcg-fade-delay-2 mt-14 max-w-xl" aria-label="Galindo Consulting Group">
+              <h1 className="relative inline-flex flex-col items-start leading-none text-white">
+                <span className="pointer-events-none absolute -left-8 -top-5 h-24 w-[360px] rotate-[-2deg] rounded-[50%] border-[7px] border-[#35dfff] border-b-transparent shadow-[0_0_24px_rgba(0,229,255,0.28)] sm:-left-10 sm:-top-6 sm:h-28 sm:w-[430px] lg:h-32 lg:w-[500px]" />
+                <span className="relative z-10 font-serif text-7xl font-normal italic tracking-[-0.05em] text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.45)] sm:text-8xl lg:text-9xl">
+                  Galindo
+                </span>
+                <span className="relative z-10 ml-6 mt-1 text-2xl font-bold tracking-[0.04em] text-slate-100 sm:ml-12 sm:text-3xl lg:ml-16 lg:text-4xl">
+                  Consulting Group
+                </span>
+              </h1>
+            </div>
 
             <p className="gcg-fade-up gcg-fade-delay-3 mt-7 max-w-2xl text-xl font-semibold leading-snug text-[#00e5ff] sm:text-2xl">
               {t.introduction.subtitle}
@@ -110,4 +118,6 @@ export default function Introduction() {
     </>
   );
 }
+
+
 

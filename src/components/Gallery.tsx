@@ -22,7 +22,7 @@ export default function Gallery() {
         <div className="mb-12 max-w-4xl">
           <span className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">{t.gallery.eyebrow}</span>
           <h2 className="mt-5 font-serif text-4xl font-normal leading-tight tracking-tight text-white sm:text-5xl">{t.gallery.title}</h2>
-          <p className="mt-4 text-lg leading-8 text-slate-400">{t.gallery.description}</p>
+          
         </div>
 
         {/* Atualizado para grid-cols-5 em telas grandes para acomodar a quinta foto */}
