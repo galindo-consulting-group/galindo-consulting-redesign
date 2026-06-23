@@ -38,18 +38,17 @@ export default function NavBar() {
       }`}
     >
       <nav className="mx-auto mt-3 flex max-w-7xl flex-col gap-3 rounded-none border border-[#0080ff]/15 bg-white/90 px-4 py-3 shadow-[0_18px_60px_rgba(0,86,170,0.16)] backdrop-blur-2xl sm:flex-row sm:items-center sm:justify-between sm:rounded-full sm:px-5 lg:px-6">
-        <a
-          href="#introduction"
-          className="group flex shrink-0 flex-col leading-none"
-          aria-label="Galindo Consulting Group home"
+        <div
+          className="flex h-14 w-[178px] shrink-0 cursor-default flex-col items-center justify-center leading-none"
+          aria-label="Galindo Consulting Group"
         >
-          <span className="font-serif text-3xl font-bold italic tracking-tight text-[#06315f] transition-colors group-hover:text-[#0080ff]">
+          <span className="font-serif text-[31px] font-normal italic leading-none tracking-[-0.035em] text-[#06315f]">
             Galindo
           </span>
-          <span className="mt-1 text-[11px] font-bold tracking-tight text-[#4478aa] transition-colors group-hover:text-[#1f5f99]">
-            Consulting Group, Inc.
+          <span className="mt-0.5 text-[10px] font-extrabold leading-none tracking-[0.02em] text-[#06315f]">
+            Consulting Group
           </span>
-        </a>
+        </div>
 
         <div className="flex min-w-0 flex-1 items-center justify-between gap-3 sm:justify-end">
           <ul className="flex min-w-0 items-center gap-1 overflow-x-auto sm:gap-2 lg:gap-1">
@@ -87,6 +86,10 @@ export default function NavBar() {
     </header>
   );
 }
+
+
+
+
 
 
 

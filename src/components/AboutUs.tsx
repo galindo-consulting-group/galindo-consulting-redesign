@@ -56,7 +56,6 @@ export default function AboutUs() {
                 <div className="relative h-72 shrink-0 overflow-hidden bg-[#0f1117]">
                   <img src={imageData.image} alt={leader.name} className={`h-full w-full object-cover grayscale-[12%] transition duration-700 group-hover:scale-105 ${imageData.imagePlacement}`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07080c] via-transparent to-transparent" />
-                  <span className="absolute left-4 top-4 rounded-full border border-white/25 bg-black/40 px-3 py-1 font-mono text-xs font-bold text-white backdrop-blur">{String(index + 1).padStart(2, "0")}</span>
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-serif text-2xl font-normal leading-tight tracking-tight text-[#06315f]">{leader.name}</h3>
@@ -95,6 +94,7 @@ export default function AboutUs() {
     </section>
   );
 }
+
 
 
 
