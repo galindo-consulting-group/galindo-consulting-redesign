@@ -35,7 +35,7 @@
     leaders: [
       { name: "Jorge Galindo", role: "CEO, Galindo Consulting Group", description: "Provides overall executive leadership, company vision, and global strategic direction across operations and partnerships." },
       { name: "Carlos Galindo", role: "President & Co-Founder", description: "Drives business expansion, strategic initiatives, and high-level client relationships across global engagements." },
-      { name: "Sergio Pereyra", role: "Projet Manager & Delivery Director", description: "Leads worldwide software delivery, technical architecture, and engineering execution across distributed teams and client systems." },
+      { name: "Sergio Pereyra", role: "Project Manager & Delivery Director", description: "Leads worldwide software delivery, technical architecture, and engineering execution across distributed teams and client systems." },
       { name: "Monica Lavayen", role: "Chief Operations & Finance Lead", description: "Oversees operations, financial planning, resource management, and organizational efficiency across all company divisions." },
       { name: "Ivan Szabo", role: "General Manager, E-Commerce & Digital Platforms (Bolivia)", description: "Leads regional e-commerce strategy, platform operations, and digital commerce growth initiatives in Bolivia." },
     ],
@@ -148,6 +148,7 @@
     builtWith: "Built with React, TypeScript and Tailwind CSS",
   },
 };
+
 
 
 

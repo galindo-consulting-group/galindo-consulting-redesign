@@ -29,7 +29,7 @@ export const pt: typeof en = {
     leaders: [
       { name: "Jorge Galindo", role: "CEO, Galindo Consulting Group", description: "Fornece liderança executiva geral, visão da empresa e direção estratégica global em operações e parcerias." },
       { name: "Carlos Galindo", role: "President & Co-Founder", description: "Impulsiona expansão de negócios, iniciativas estratégicas e relacionamentos de alto nível com clientes globais." },
-      { name: "Sergio Pereyra", role: "Projet Manager & Delivery Director", description: "Lidera entrega global de software, arquitetura técnica e execução de engenharia em times distribuídos e sistemas de clientes." },
+      { name: "Sergio Pereyra", role: "Project Manager & Delivery Director", description: "Lidera entrega global de software, arquitetura técnica e execução de engenharia em times distribuídos e sistemas de clientes." },
       { name: "Monica Lavayen", role: "Chief Operations & Finance Lead", description: "Supervisiona operações, planejamento financeiro, gestão de recursos e eficiência organizacional em todas as divisões." },
       { name: "Ivan Szabo", role: "General Manager, E-Commerce & Digital Platforms (Bolivia)", description: "Lidera estratégia regional de e-commerce, operações de plataforma e crescimento de comércio digital na Bolívia." },
     ],
@@ -94,6 +94,7 @@ export const pt: typeof en = {
   },
   footer: { description: "Gestão real, código real e pessoas reais construindo arquitetura segura para equipes que precisam de entrega confiável.", menuTitle: "Menu", servicesTitle: "Serviços", contactTitle: "Contato", quickLinks: [{ label: "Início", href: "#introduction" }, { label: "Sobre", href: "#about" }, { label: "Projetos", href: "#projects" }, { label: "Resultados", href: "#results" }, { label: "Serviços", href: "#services" }, { label: "Contato", href: "#contact" }], services: ["Software sob medida", "CTO fracionado", "Integração de APIs", "Automação com IA"], linkedin: "LinkedIn", companyInfo: "Galindo Consulting Group, Inc.", cta: "Agendar chamada", rights: "© 2026 Galindo Consulting Group, Inc. Todos os direitos reservados.", builtWith: "Criado com React, TypeScript e Tailwind CSS" },
 };
+
 
 
 
