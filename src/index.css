@@ -126,6 +126,16 @@ body {
 .gcg-card textarea::placeholder {
   color: rgba(31, 95, 153, 0.58);
 }
+.gcg-card .gcg-form-field {
+  color: var(--gcg-blue-dark) !important;
+  background: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.78) !important;
+  caret-color: var(--gcg-blue);
+}
+
+.gcg-card .gcg-form-field::placeholder {
+  color: rgba(31, 95, 153, 0.58) !important;
+}
 
 .gcg-topline {
   position: relative;
@@ -237,6 +247,7 @@ body {
     transition: none;
   }
 }
+
 
 
 

@@ -143,7 +143,7 @@ export default function ContactUs() {
                   value={formData.name}
                   onChange={(event) => updateField("name", event.target.value)}
                   placeholder={t.contact.form.namePlaceholder}
-                  className="mt-3 h-12 w-full rounded-xl border border-[#0080ff]/20 bg-white px-4 text-base text-[#06315f] outline-none transition-colors placeholder:text-[#1f5f99]/55 focus:border-[#0080ff]"
+                  className="gcg-form-field mt-3 h-12 w-full rounded-xl border border-[#0080ff]/20 px-4 text-base outline-none transition-colors focus:border-[#0080ff]"
                 />
               </div>
 
@@ -158,7 +158,7 @@ export default function ContactUs() {
                   value={formData.email}
                   onChange={(event) => updateField("email", event.target.value)}
                   placeholder={t.contact.form.emailPlaceholder}
-                  className="mt-3 h-12 w-full rounded-xl border border-[#0080ff]/20 bg-white px-4 text-base text-[#06315f] outline-none transition-colors placeholder:text-[#1f5f99]/55 focus:border-[#0080ff]"
+                  className="gcg-form-field mt-3 h-12 w-full rounded-xl border border-[#0080ff]/20 px-4 text-base outline-none transition-colors focus:border-[#0080ff]"
                 />
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function ContactUs() {
                 value={formData.company}
                 onChange={(event) => updateField("company", event.target.value)}
                 placeholder={t.contact.form.companyPlaceholder}
-                className="mt-3 h-12 w-full rounded-xl border border-[#0080ff]/20 bg-white px-4 text-base text-[#06315f] outline-none transition-colors placeholder:text-[#1f5f99]/55 focus:border-[#0080ff]"
+                className="gcg-form-field mt-3 h-12 w-full rounded-xl border border-[#0080ff]/20 px-4 text-base outline-none transition-colors focus:border-[#0080ff]"
               />
             </div>
 
@@ -188,7 +188,7 @@ export default function ContactUs() {
                 value={formData.message}
                 onChange={(event) => updateField("message", event.target.value)}
                 placeholder={t.contact.form.messagePlaceholder}
-                className="mt-3 w-full resize-none rounded-xl border border-[#0080ff]/20 bg-white px-4 py-4 text-base text-[#06315f] outline-none transition-colors placeholder:text-[#1f5f99]/55 focus:border-[#0080ff]"
+                className="gcg-form-field mt-3 w-full resize-none rounded-xl border border-[#0080ff]/20 px-4 py-4 text-base outline-none transition-colors focus:border-[#0080ff]"
               />
             </div>
 
@@ -211,3 +211,4 @@ export default function ContactUs() {
     </section>
   );
 }
+
