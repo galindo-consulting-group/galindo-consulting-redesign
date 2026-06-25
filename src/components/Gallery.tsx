@@ -1,18 +1,18 @@
 ﻿import { useState } from "react";
 import apresentationImg from "../assets/apresentation.jpeg";
+import meetingImg from "../assets/meeting.jpeg";
 import clarianaPasseioImg from "../assets/clariana-passeio.webp";
 import conferenceImg from "../assets/conference.jpeg";
 import globalImg from "../assets/global.jpeg";
-import meetingImg from "../assets/meeting.jpeg";
 import meetingTableImg from "../assets/meeting-table.jpeg";
 import { useLanguage } from "../context/LanguageContext";
 
 const galleryItems = [
   globalImg,
+  meetingImg,
   conferenceImg,
   meetingTableImg,
   clarianaPasseioImg,
-  meetingImg,
   apresentationImg,
 ];
 
