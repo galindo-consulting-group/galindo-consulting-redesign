@@ -91,24 +91,24 @@ export default function Projects() {
   const { t } = useLanguage();
 
   return (
-    <section id="projects" className="reveal bg-transparent px-5 py-24 text-[#06315f] sm:px-6 lg:px-10">
+    <section id="projects" className="reveal bg-transparent px-4 py-16 text-[#06315f] sm:px-6 sm:py-20 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 md:grid-cols-[0.75fr_1.25fr] md:items-end">
           <span className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">{t.projects.eyebrow}</span>
           <div>
-            <h2 className="max-w-4xl font-serif text-4xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.projects.title}</h2>
-            <p className="mt-4 max-w-3xl text-lg leading-8 text-[#1f5f99]">{t.projects.description}</p>
+            <h2 className="max-w-4xl font-serif text-3xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.projects.title}</h2>
+            <p className="mt-4 max-w-3xl text-base leading-7 text-[#1f5f99] sm:text-lg sm:leading-8">{t.projects.description}</p>
           </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-12 lg:grid-cols-3">
           {projectCards.map((project, index) => (
             <a
               key={project.title}
               href={project.url}
               target="_blank"
               rel="noreferrer"
-              className="gcg-card gcg-topline group relative flex min-h-[620px] flex-col overflow-hidden rounded-[18px] p-7 text-white no-underline transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0080ff]"
+              className="gcg-card gcg-topline group relative flex flex-col overflow-hidden rounded-[18px] p-5 text-white no-underline transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0080ff] sm:p-7 lg:min-h-[620px]"
               aria-label={`Open project ${project.title}`}
             >
               <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(255,255,255,0.2),transparent_18rem),radial-gradient(circle_at_90%_12%,rgba(191,226,255,0.18),transparent_20rem)]" />
@@ -123,9 +123,9 @@ export default function Projects() {
                 </div>
 
                 <p className="font-mono text-sm font-light text-white/62">{String(index + 4).padStart(2, "0")}</p>
-                <h3 className="mt-4 font-serif text-3xl font-normal leading-tight tracking-tight text-white">{project.title}</h3>
+                <h3 className="mt-4 font-serif text-2xl font-normal leading-tight tracking-tight text-white sm:text-3xl">{project.title}</h3>
 
-                <div className="mt-6 grid grid-cols-3 gap-3">
+                <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
                   {project.metrics.map((metric) => (
                     <div key={`${project.title}-${metric.label}`} className="rounded-2xl border border-white/15 bg-white/12 p-3">
                       <p className="text-lg font-black leading-none text-white">{metric.value}</p>
@@ -134,7 +134,7 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <p className="mt-6 text-[15px] leading-7 text-white/90">{project.description}</p>
+                <p className="mt-6 text-sm leading-7 text-white/90 sm:text-[15px]">{project.description}</p>
                 <p className="mt-5 rounded-2xl border border-white/10 bg-[#4466DD] p-4 text-sm font-bold leading-6 text-white">{project.outcome}</p>
 
                 <div className="mt-auto pt-8">

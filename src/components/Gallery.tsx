@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+﻿import { useEffect, useState } from "react";
 import apresentationImg from "../assets/apresentation.jpeg";
 import meetingImg from "../assets/meeting.jpeg";
 import clarianaPasseioImg from "../assets/clariana-passeio.webp";
@@ -16,12 +16,32 @@ const galleryItems = [
   apresentationImg,
 ];
 
-const visibleCount = 4;
-
 export default function Gallery() {
   const { t } = useLanguage();
   const [startIndex, setStartIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [visibleCount, setVisibleCount] = useState(1);
+
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      if (window.innerWidth >= 1024) {
+        setVisibleCount(4);
+        return;
+      }
+
+      if (window.innerWidth >= 640) {
+        setVisibleCount(2);
+        return;
+      }
+
+      setVisibleCount(1);
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
 
   const visibleItems = Array.from({ length: visibleCount }, (_, offset) => {
     const index = (startIndex + offset) % galleryItems.length;
@@ -37,15 +57,15 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="reveal bg-transparent px-5 py-24 text-[#06315f] sm:px-6 lg:px-10">
+    <section id="gallery" className="reveal bg-transparent px-4 py-16 text-[#06315f] sm:px-6 sm:py-20 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div className="mb-10 flex flex-col gap-6 md:mb-12 md:flex-row md:items-end md:justify-between">
           <div className="max-w-4xl">
             <span className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">{t.gallery.eyebrow}</span>
-            <h2 className="mt-5 font-serif text-4xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.gallery.title}</h2>
+            <h2 className="mt-5 font-serif text-3xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.gallery.title}</h2>
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex gap-3 self-start md:self-auto">
             <button
               type="button"
               onClick={previous}
@@ -65,7 +85,7 @@ export default function Gallery() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className={`grid gap-5 ${visibleCount === 1 ? "grid-cols-1" : visibleCount === 2 ? "grid-cols-2" : "grid-cols-2 lg:grid-cols-4"}`}>
           {visibleItems.map(({ image, index }) => (
             <button
               key={`${image}-${index}`}
@@ -80,7 +100,7 @@ export default function Gallery() {
           ))}
         </div>
 
-        <div className="mt-6 flex justify-center gap-2">
+        <div className="mt-6 flex flex-wrap justify-center gap-2">
           {galleryItems.map((image, index) => (
             <button
               key={`${image}-dot`}
@@ -94,7 +114,7 @@ export default function Gallery() {
       </div>
 
       {selectedImage ? (
-        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-[#06315f]/78 p-5 backdrop-blur-sm" role="dialog" aria-modal="true">
+        <div className="fixed inset-0 z-[80] flex items-center justify-center bg-[#06315f]/78 p-3 sm:p-5 backdrop-blur-sm" role="dialog" aria-modal="true">
           <button
             type="button"
             className="absolute inset-0 cursor-default"
@@ -105,7 +125,7 @@ export default function Gallery() {
             <button
               type="button"
               onClick={() => setSelectedImage(null)}
-              className="absolute right-4 top-4 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-white text-2xl font-black text-[#0080ff] shadow-[0_10px_28px_rgba(0,35,80,0.18)] transition hover:bg-[#0080ff] hover:text-white"
+              className="absolute right-3 top-3 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white text-2xl font-black text-[#0080ff] shadow-[0_10px_28px_rgba(0,35,80,0.18)] transition hover:bg-[#0080ff] hover:text-white sm:right-4 sm:top-4 sm:h-11 sm:w-11"
               aria-label="Close gallery preview"
             >
               ×

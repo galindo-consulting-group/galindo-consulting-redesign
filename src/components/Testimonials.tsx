@@ -91,16 +91,16 @@ export default function Testimonials() {
   const hasMetrics = Boolean(activeJob.amount || activeJob.rate || activeJob.hours);
 
   return (
-    <section id="testimonials" className="reveal bg-transparent px-5 py-24 text-[#06315f] sm:px-6 lg:px-10">
+    <section id="testimonials" className="reveal bg-transparent px-4 py-16 text-[#06315f] sm:px-6 sm:py-20 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-12 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div className="mb-10 flex flex-col gap-6 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-4xl">
             <span className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">{t.testimonials.eyebrow}</span>
-            <h2 className="mt-5 font-serif text-4xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.testimonials.title}</h2>
-            <p className="mt-4 text-lg leading-8 text-[#1f5f99]">Completed jobs (4175)</p>
+            <h2 className="mt-5 font-serif text-3xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.testimonials.title}</h2>
+            <p className="mt-4 text-base leading-7 text-[#1f5f99] sm:text-lg sm:leading-8">Completed jobs (4175)</p>
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex gap-3 self-start lg:self-auto">
             <button
               type="button"
               onClick={previous}
@@ -122,11 +122,11 @@ export default function Testimonials() {
 
         <div className="gcg-card overflow-hidden rounded-[18px]">
           <div className="grid gap-0 lg:grid-cols-[0.75fr_1.25fr]">
-            <div className="border-b border-[#0080ff]/15 p-6 lg:border-b-0 lg:border-r lg:p-8">
+            <div className="border-b border-[#0080ff]/15 p-5 sm:p-6 lg:border-b-0 lg:border-r lg:p-8">
               <p className="font-mono text-sm font-bold uppercase tracking-[0.18em] text-[#00e5ff]">
                 {String(activeIndex + 1).padStart(2, "0")} / {String(completedJobs.length).padStart(2, "0")}
               </p>
-              <h3 className="mt-6 font-serif text-3xl font-normal leading-tight text-[#06315f]">{activeJob.title}</h3>
+              <h3 className="mt-6 font-serif text-2xl font-normal leading-tight text-[#06315f] sm:text-3xl">{activeJob.title}</h3>
               {activeJob.client ? <p className="mt-3 text-base font-bold text-[#06315f]">{activeJob.client}</p> : null}
               {activeJob.dates ? <p className="mt-4 text-sm font-semibold text-[#4478aa]">{activeJob.dates}</p> : null}
 
@@ -138,8 +138,8 @@ export default function Testimonials() {
               ) : null}
             </div>
 
-            <div className="p-6 lg:p-8">
-              <blockquote className="border-l-4 border-white/35 pl-5 text-xl leading-9 text-slate-200">
+            <div className="p-5 sm:p-6 lg:p-8">
+              <blockquote className="border-l-4 border-white/35 pl-4 text-lg leading-8 text-slate-200 sm:pl-5 sm:text-xl sm:leading-9">
                 “{activeJob.quote}”
               </blockquote>
 

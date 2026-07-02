@@ -80,19 +80,19 @@ export default function ContactUs() {
   };
 
   return (
-    <section id="contact" className="reveal bg-transparent px-5 py-24 text-[#06315f] sm:px-6 lg:px-10">
+    <section id="contact" className="reveal bg-transparent px-4 py-16 text-[#06315f] sm:px-6 sm:py-20 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-12 max-w-3xl">
+        <div className="mb-10 max-w-3xl sm:mb-12">
           <p className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">
             {t.contact.eyebrow}
           </p>
-          <h2 className="mt-5 font-serif text-5xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-6xl">
+          <h2 className="mt-5 font-serif text-3xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl lg:text-6xl">
             {t.contact.title}
           </h2>
-          <p className="mt-5 text-lg leading-8 text-[#1f5f99]">{t.contact.description}</p>
+          <p className="mt-5 text-base leading-7 text-[#1f5f99] sm:text-lg sm:leading-8">{t.contact.description}</p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="space-y-6">
             <div className="gcg-card rounded-[18px] p-7 sm:p-8">
               <h3 className="font-serif text-3xl font-normal text-[#06315f]">{t.contact.helpTitle}</h3>

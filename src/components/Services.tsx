@@ -6,25 +6,25 @@ export default function Services() {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="reveal bg-transparent px-5 py-24 text-[#06315f] sm:px-6 lg:px-10">
+    <section id="services" className="reveal bg-transparent px-4 py-16 text-[#06315f] sm:px-6 sm:py-20 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
           <div>
             <p className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">
               {t.services.eyebrow}
             </p>
-            <h2 className="mt-5 font-serif text-4xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">
+            <h2 className="mt-5 font-serif text-3xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">
               {t.services.title}
             </h2>
           </div>
-          <p className="max-w-3xl text-lg leading-8 text-[#1f5f99] lg:justify-self-end">
+          <p className="max-w-3xl text-base leading-7 text-[#1f5f99] sm:text-lg sm:leading-8 lg:justify-self-end">
             {t.services.intro}
           </p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {t.services.items.map((service, index) => (
-            <article key={service.title} className="gcg-card gcg-topline rounded-[18px] p-7">
+            <article key={service.title} className="gcg-card gcg-topline rounded-[18px] p-5 sm:p-7">
               <span className="font-mono text-sm font-bold text-[#00e5ff]">
                 {serviceMarks[index]}
               </span>
@@ -36,8 +36,8 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="gcg-card mt-12 flex flex-col gap-5 rounded-[18px] p-7 sm:flex-row sm:items-center sm:justify-between sm:p-8">
-          <p className="font-serif text-3xl font-normal leading-snug text-[#06315f]">{t.services.ctaTitle}</p>
+        <div className="gcg-card mt-12 flex flex-col gap-5 rounded-[18px] p-5 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+          <p className="font-serif text-2xl font-normal leading-snug text-[#06315f] sm:text-3xl">{t.services.ctaTitle}</p>
           <a
             href="#contact"
             className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-extrabold uppercase tracking-[0.1em] text-[#0080ff] transition hover:-translate-y-0.5 hover:bg-[#eaf5ff]"

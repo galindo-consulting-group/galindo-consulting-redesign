@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="relative overflow-hidden border-t border-[#0080ff]/15 bg-transparent px-5 py-14 text-[#1f5f99] sm:px-6 lg:px-10">
+    <footer className="relative overflow-hidden border-t border-[#0080ff]/15 bg-transparent px-4 py-12 text-[#1f5f99] sm:px-6 sm:py-14 lg:px-10">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(0,229,255,0.12),transparent_24rem),radial-gradient(circle_at_82%_18%,rgba(124,58,237,0.1),transparent_22rem)]" />
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-10 border-b border-[#0080ff]/15 pb-10 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.8fr_0.95fr_1fr]">

@@ -32,12 +32,12 @@ export default function AboutUs() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="gcg-shell reveal bg-transparent px-5 py-24 text-[#06315f] sm:px-6 lg:px-10">
+    <section id="about" className="gcg-shell reveal bg-transparent px-4 py-16 text-[#06315f] sm:px-6 sm:py-20 lg:px-10 lg:py-24">
       <div className="relative z-10 mx-auto max-w-7xl">
-        <div className="mb-14 max-w-5xl">
+        <div className="mb-10 max-w-5xl sm:mb-14">
           <span className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">{t.about.eyebrow}</span>
-          <h2 className="mt-5 max-w-4xl font-serif text-4xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl lg:text-6xl">{t.about.title}</h2>
-          <p className="mt-6 max-w-4xl text-lg leading-8 text-[#1f5f99]">{t.about.description}</p>
+          <h2 className="mt-5 max-w-4xl font-serif text-3xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl lg:text-6xl">{t.about.title}</h2>
+          <p className="mt-5 max-w-4xl text-base leading-7 text-[#1f5f99] sm:mt-6 sm:text-lg sm:leading-8">{t.about.description}</p>
         </div>
 
         <div className="mb-6 flex flex-col gap-3 border-y border-[#0080ff]/15 py-4 sm:flex-row sm:items-center sm:justify-between">
@@ -52,8 +52,8 @@ export default function AboutUs() {
           {t.about.leaders.map((leader, index) => {
             const imageData = leaderImages[index];
             return (
-              <article key={`${leader.name}-${leader.role}`} className={`gcg-card gcg-topline flex min-h-[500px] flex-col overflow-hidden rounded-[18px] lg:col-span-2 ${index === 3 ? "lg:col-start-2" : ""}`}>
-                <div className="relative h-72 shrink-0 overflow-hidden bg-[#0f1117]">
+              <article key={`${leader.name}-${leader.role}`} className={`gcg-card gcg-topline flex flex-col overflow-hidden rounded-[18px] lg:col-span-2 lg:min-h-[500px] ${index === 3 ? "lg:col-start-2" : ""}`}>
+                <div className="relative h-60 shrink-0 overflow-hidden bg-[#0f1117] sm:h-72">
                   <img src={imageData.image} alt={leader.name} className={`h-full w-full object-cover grayscale-[12%] transition duration-700 group-hover:scale-105 ${imageData.imagePlacement}`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07080c] via-transparent to-transparent" />
                 </div>
@@ -67,7 +67,7 @@ export default function AboutUs() {
           })}
         </div>
 
-        <div className="mb-6 mt-16 flex items-center justify-between border-y border-[#0080ff]/15 py-4">
+        <div className="mb-6 mt-12 flex items-center justify-between border-y border-[#0080ff]/15 py-4 sm:mt-16">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#4478aa]">{t.about.teamIntro}</p>
           <p className="font-mono text-sm text-[#4478aa]">06</p>
         </div>
@@ -76,8 +76,8 @@ export default function AboutUs() {
           {t.about.members.map((member, index) => {
             const imageData = memberImages[index];
             return (
-              <article key={member.name} className={`gcg-card gcg-topline flex min-h-[480px] flex-col overflow-hidden rounded-[18px] ${index === 4 ? "lg:col-start-2" : ""}`}>
-                <div className="relative h-64 shrink-0 overflow-hidden bg-[#0f1117]">
+              <article key={member.name} className={`gcg-card gcg-topline flex flex-col overflow-hidden rounded-[18px] lg:min-h-[480px] ${index === 4 ? "lg:col-start-2" : ""}`}>
+                <div className="relative h-56 shrink-0 overflow-hidden bg-[#0f1117] sm:h-64">
                   <img src={imageData.image} alt={member.name} className={`h-full w-full object-cover grayscale-[20%] transition duration-700 group-hover:scale-105 ${imageData.imagePlacement}`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07080c] via-transparent to-transparent" />
                 </div>

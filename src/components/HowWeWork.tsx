@@ -4,13 +4,13 @@ export default function HowWeWork() {
   const { t } = useLanguage();
 
   return (
-    <section className="reveal bg-transparent px-5 py-24 text-[#06315f] sm:px-6 lg:px-10">
+    <section className="reveal bg-transparent px-4 py-16 text-[#06315f] sm:px-6 sm:py-20 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <span className="gcg-kicker text-xs font-bold uppercase tracking-[0.2em]">{t.howWeWork.eyebrow}</span>
-        <h2 className="mt-5 font-serif text-4xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.howWeWork.title}</h2>
-        <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <h2 className="mt-5 font-serif text-3xl font-normal leading-tight tracking-tight text-[#06315f] sm:text-5xl">{t.howWeWork.title}</h2>
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:mt-12 md:grid-cols-2 lg:grid-cols-4">
           {t.howWeWork.items.map((step, index) => (
-            <article key={step.title} className="gcg-card gcg-topline rounded-[18px] p-6">
+            <article key={step.title} className="gcg-card gcg-topline rounded-[18px] p-5 sm:p-6">
               <span className="font-mono text-sm font-bold text-[#00e5ff]">{String(index + 1).padStart(2, "0")}</span>
               <h3 className="mt-6 font-serif text-2xl font-normal leading-tight text-[#06315f]">{step.title}</h3>
               <p className="mt-4 text-sm leading-7 text-[#1f5f99]">{step.description}</p>
